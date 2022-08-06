@@ -1,0 +1,9 @@
+.container{
+  height: 100rem;
+}
+.example-card {
+  margin-bottom: 10%;
+  width:90%;
+  height: 30%;
+  margin-left: 4.5%;
+}
