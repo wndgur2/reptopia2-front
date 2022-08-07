@@ -1,15 +1,14 @@
 .tileContainer{
-  margin:0.5rem;
+  margin:2rem;
   width:100%;
   height: 100%;
 }
 
 .tile{
-  height: 90%;
+  height: 70%;
   background-color: lightgray;
 }
 
 .container{
   z-index: -1;
-  height: 100rem;
 }

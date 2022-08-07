@@ -1,4 +1,4 @@
-<mat-grid-list cols="5" rowHeight="350px">
+<mat-grid-list [cols]="colSize" [rowHeight]="rowHeight">
   <mat-grid-tile
       *ngFor="let tile of tiles">
     <div class="tileContainer">

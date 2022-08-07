@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { getHeightCol } from '../consts';
 
 @Component({
   selector: 'app-temperatures',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./temperatures.component.css', '../shop.component.css']
 })
 export class TemperaturesComponent implements OnInit {
+
+  sizes = getHeightCol(2.5, 300);
+  rowHeight = this.sizes[0];
+  colSize = this.sizes[1];
 
   constructor() { }
 
