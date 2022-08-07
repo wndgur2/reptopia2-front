@@ -1,25 +1,29 @@
 .categories{
+  position: absolute;
+  left:25%;
+  width:50%;
+  top:14%;
   display: flex;
   justify-content: center;
 }
 
 .active {
-  font-size: 18px;
+  font-size: 16px;
   background-color: lightgray;
 }
 
 .category:not(.active){
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .category{
   font-weight:lighter;
   text-decoration: none;
   color:black;
-  padding-left:5%;
-  padding-right:5%;
-  padding-top:3%;
-  padding-bottom:3%;
+  padding-left:3%;
+  padding-right:3%;
+  padding-top:2%;
+  padding-bottom:2%;
   text-align: center;
   transition: font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
