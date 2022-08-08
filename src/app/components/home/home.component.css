@@ -1,12 +1,11 @@
 .tileContainer{
-  margin:2rem;
+  margin:3%;
   width:100%;
   height: 100%;
 }
 
 .tile{
-  height: 70%;
-  background-color: lightgray;
+  height: 100%;
 }
 
 .container{

@@ -1,14 +1,14 @@
 <div class="container">
-  <mat-grid-list cols="250" rowHeight="4.5px">
+  <mat-grid-list cols="250" rowHeight="6px">
     <mat-grid-tile
         *ngFor="let tile of tiles"
         [colspan]="tile.cols"
         [rowspan]="tile.rows">
       <div class="tileContainer">
         <div class="tile">
-          <canvas style="border:1px solid #000000; background-color: #000000; width: 100%; height: 100%;" width="100%" height="100%"></canvas>
+          <canvas style="background-color: #000000; width: 100%; height: calc(66% - 40px);"></canvas>
+          <span>{{tile.text}}</span>
         </div>
-        <span>{{tile.text}}</span>
       </div>
     </mat-grid-tile>
   </mat-grid-list>
