@@ -1,5 +1,45 @@
 import { Component, OnInit } from '@angular/core';
 
+enum Species {
+  CrestedGecko,
+  LeopardGecko,
+  BallPython
+}
+
+enum CrestedGeckoMorph{
+  Harliqueen,
+  Tiger,
+  Flame,
+  Harlequin,
+  Pinstripe,
+  Dalmatian,
+  Spots,
+  Creamsicle
+}
+
+class creature{
+  species:Species;
+  length:number;
+  weight:number;
+  cost:number;
+
+  constructor(species:Species, length:number, weight:number, cost:number){
+    this.species = species;
+    this.length = length;
+    this.weight = weight;
+    this.cost = cost;
+  }
+
+  getSpecies(){
+    return Species[this.species];
+  }
+}
+
+interface breeder{
+  name: string;
+  creatures: creature[];
+}
+
 @Component({
   selector: 'app-breeders',
   templateUrl: './breeders.component.html',
@@ -12,7 +52,6 @@ export class BreedersComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
-  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
-  originally bred for hunting.`;
+  creatures = [new creature(0, 10, 23, 300), new creature(1, 15, 33, 150), new creature(2, 33, 39, 200)];
+
 }

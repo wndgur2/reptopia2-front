@@ -1,32 +1,24 @@
-<div class="container">
-  <mat-card class="example-card">
-    <mat-card-title-group>
-      <canvas style="border:1px solid #000000; background-color: #000000;margin-bottom: 1rem;" width="800%" height="400%"></canvas>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Extra large</mat-card-subtitle>
-    </mat-card-title-group>
-    <mat-card-content>
-      {{longText}}
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="example-card">
-    <mat-card-title-group>
-      <canvas style="border:1px solid #000000; background-color: #000000;margin-bottom: 1rem;" width="800%" height="400%"></canvas>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Extra large</mat-card-subtitle>
-    </mat-card-title-group>
-    <mat-card-content>
-      {{longText}}
-    </mat-card-content>
-  </mat-card>
-  <mat-card class="example-card">
-    <mat-card-title-group>
-      <canvas style="border:1px solid #000000; background-color: #000000;margin-bottom: 1rem;" width="800%" height="400%"></canvas>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Extra large</mat-card-subtitle>
-    </mat-card-title-group>
-    <mat-card-content>
-      {{longText}}
-    </mat-card-content>
+<div class="container" *ngFor="let c of creatures">
+  <mat-card class="breeder">
+    <div class="cardInner">
+      <div class="from">from <span class="name">REPTOPIA</span></div>
+      <div class="contents">
+        <canvas></canvas>
+        <div class="discription">
+          <span class="title">{{c.getSpecies()}}</span>
+          <span class="specification">
+            이름과 생년월일
+            <br>
+            무게: {{c.weight}}g
+            <br>
+            길이: {{c.length}}cm
+            <br>
+            가격: {{c.cost}} reppi
+          </span>
+          <br>
+          <div class="comment"></div>
+        </div>
+      </div>
+    </div>
   </mat-card>
 </div>
