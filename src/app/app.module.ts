@@ -19,6 +19,7 @@ import { CagesComponent } from './components/shop/cages/cages.component';
 import { FoodsComponent } from './components/shop/foods/foods.component';
 import { TemperaturesComponent } from './components/shop/temperatures/temperatures.component';
 import { MaterialsComponent } from './components/shop/materials/materials.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MaterialsComponent } from './components/shop/materials/materials.compon
     FoodsComponent,
     TemperaturesComponent,
     MaterialsComponent,
-    TemperaturesComponent
+    TemperaturesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

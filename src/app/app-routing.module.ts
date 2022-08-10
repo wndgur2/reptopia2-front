@@ -8,10 +8,12 @@ import { CagesComponent } from './components/shop/cages/cages.component';
 import { FoodsComponent } from './components/shop/foods/foods.component';
 import { MaterialsComponent } from './components/shop/materials/materials.component';
 import { TemperaturesComponent } from './components/shop/temperatures/temperatures.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'shop', redirectTo: '/shop/cages', pathMatch: 'full' },
   { path: 'shop', component: ShopComponent, children: [

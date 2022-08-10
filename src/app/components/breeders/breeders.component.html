@@ -1,23 +1,21 @@
 <div class="container" *ngFor="let c of creatures">
   <mat-card class="breeder">
-    <div class="cardInner">
-      <div class="from">from <span class="name">REPTOPIA</span></div>
-      <div class="contents">
-        <canvas></canvas>
+    <div class="contents">
+      <canvas></canvas>
+      <div class="text">
         <div class="discription">
-          <span class="title">{{c.getSpecies()}}</span>
+          <span class="species">{{c.getSpecies()}}</span>
           <span class="specification">
-            이름과 생년월일
-            <br>
-            무게: {{c.weight}}g
-            <br>
-            길이: {{c.length}}cm
-            <br>
-            가격: {{c.cost}} reppi
+            이름&nbsp;&nbsp;{{c.name}}
+            <br>성별&nbsp;&nbsp;암
+            <br>무게&nbsp;&nbsp;{{c.weight}}g
+            <br>길이&nbsp;&nbsp;{{c.length}}cm
+            <br>생일&nbsp;&nbsp;21.11.08
           </span>
-          <br>
-          <div class="comment"></div>
+          <div class="comment">{{c.comment}}</div>
+          <div class="cost"><span>{{c.cost}} reppi</span></div>
         </div>
+        <div class="adopt"><span>ADOPT</span></div>
       </div>
     </div>
   </mat-card>

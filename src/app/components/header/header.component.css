@@ -28,11 +28,11 @@
 }
 
 #shop:not(.active){
-  background-color: #30c1a7C0;
+  background-color: #49f4d4c0;
 }
 
 #breeders:not(.active){
-  background-color: #ffd500C0;
+  background-color: #ffee54;
 }
 
 #my:not(.active){
