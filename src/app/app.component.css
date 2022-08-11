@@ -1,8 +1,15 @@
+.background{
+  width:100%;
+  z-index: -1;
+}
+
 .container{
   width:80%;
+  margin-top: 10%;
   margin-left: 10%;
   overflow-y: hidden !important;
 }
+
 @font-face {
   font-family: jost-light;
   src: url(../assets/fonts/jost-cufonfonts/Jost300Light.otf) format("opentype");

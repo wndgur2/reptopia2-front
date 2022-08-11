@@ -1,10 +1,10 @@
 <div class="container">
-  <mat-grid-list cols="3" rowHeight="400px">
+  <mat-grid-list cols="2" rowHeight="500px">
     <mat-grid-tile
         *ngFor="let tile of tiles">
         <div class="tileContainer">
-          <div class="tile">
-            CANVAS
+          <div class="tile" [class.mat-elevation-z5]="true">
+            <canvas ></canvas>
           </div>
           <span class="itemText"> {{tile.text}} </span> <br>
         </div>

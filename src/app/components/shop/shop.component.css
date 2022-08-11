@@ -28,6 +28,10 @@
   transition: font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
+.category:hover:not(.active){
+  background-color: #F0F0F0;
+}
+
 .tileContainer{
   width:100%;
   height: 100%;
