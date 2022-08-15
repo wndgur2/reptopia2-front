@@ -1,6 +1,4 @@
-<div class="background">
-<app-header></app-header>
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
+<div [class.mat-elevation-z6]="true" class="header">
+  <app-header style="width: 100%"></app-header>
 </div>
+<router-outlet></router-outlet>

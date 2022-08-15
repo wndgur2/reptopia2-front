@@ -55,5 +55,5 @@ export class BreedersComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  creatures = [new creature("삐용이", 0, 10, 23, 300, "슈푸보단 충식 선호합니다."), new creature("꼬북이", 1, 15, 33, 150, "먹성 개좋습니다."), new creature("장숙이", 2, 33, 39, 200, "발색 올라오는중.")];
+  creatures = [new creature("삐용이", 0, 10, 23, 300, "슈푸보단 충식 선호합니다."), new creature("꼬북이", 1, 15, 33, 150, "먹성 개좋습니다."), new creature("장숙이", 2, 33, 39, 200, "발색 올라오는중."),new creature("삐용이", 0, 10, 23, 300, "슈푸보단 충식 선호합니다."), new creature("꼬북이", 1, 15, 33, 150, "먹성 개좋습니다."), new creature("장숙이", 2, 33, 39, 200, "발색 올라오는중."),new creature("삐용이", 0, 10, 23, 300, "슈푸보단 충식 선호합니다."), new creature("꼬북이", 1, 15, 33, 150, "먹성 개좋습니다."), new creature("장숙이", 2, 33, 39, 200, "발색 올라오는중.")];
 }

@@ -1,14 +1,10 @@
-<div class="toolbar">
-  <div class="menuContainer" id="home" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
-    <p class="menu">HOME</p>
-  </div>
-  <div class="menuContainer" id="shop" routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">
-    <p class="menu">SHOP</p>
-  </div>
-  <div class="menuContainer" id="breeders" routerLink="/breeders" routerLinkActive="active" ariaCurrentWhenActive="page">
-    <p class="menu">BREEDERS</p>
-  </div>
-  <div class="menuContainer" id="my" routerLink="/user" routerLinkActive="active" ariaCurrentWhenActive="page">
-    <p class="menu">MY</p>
-  </div>
-</div>
+<mat-toolbar id="toolbarContainer">
+  <a id="title" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <img src="../../../assets/images/logo.png" height="36px"><span>Reptopia</span>
+  </a>
+  <a class="menu" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+  <a class="menu" routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">Shop</a>
+  <a class="menu" routerLink="/breeders" routerLinkActive="active" ariaCurrentWhenActive="page">Breeders</a>
+  <a class="menu" routerLink="/community" routerLinkActive="active" ariaCurrentWhenActive="page">Community</a>
+  <a class="menu" routerLink="/user" routerLinkActive="active" ariaCurrentWhenActive="page">Me</a>
+</mat-toolbar>

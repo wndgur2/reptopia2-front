@@ -1,0 +1,84 @@
+.container{
+  padding: 5%;
+  min-height: 100%;
+}
+
+.board{
+  padding-top: 1%;
+  height: 30rem;
+}
+
+.mat-tab-label{
+  font-size: 100px !important;
+}
+
+.post{
+  display: flex;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.title{
+  display: inline-block;
+  width: 70%;
+}
+
+.columns{
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 0%;
+  color: #212121a0;
+  font-size: 15px;
+}
+
+.right{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleCol{
+  display: inline-block;
+  width: 70%;
+}
+
+.meta{
+  display: block;
+  width: 33%;
+  text-align: end;
+}
+
+button{
+  font-weight:lighter;
+  text-decoration: none;
+  padding-left:2%;
+  padding-right:2%;
+  padding-top:1%;
+  padding-bottom:1%;
+  margin-right: 1.5%;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out, font-size 0.2s ease-in-out;
+  border-radius: 0%;
+  font-size: 15px;
+}
+
+button:hover:not(.active){
+  background-color: #88888854;
+  font-size: 17px;
+}
+
+.active {
+  font-size: 17px;
+  background-color: #212121;
+  color: white;
+}

@@ -19,22 +19,22 @@ export class CagesComponent implements OnInit {
   }
 
   tiles = [
-    {text: "Cage 1", cost: "2000"},
-    {text: "Cage 2", cost: "2000"},
-    {text: "Cage 3", cost: "2000"},
-    {text: "Cage 4", cost: "2000"},
-    {text: "Cage 5", cost: "2000"},
-    {text: "Cage 6", cost: "2000"},
-    {text: "Cage 7", cost: "2000"},
-    {text: "Cage 8", cost: "2000"},
-    {text: "Cage 9", cost: "2000"},
-    {text: "Cage 10", cost: "2000"},
-    {text: "Cage 11", cost: "2000"},
-    {text: "Cage 12", cost: "2000"},
-    {text: "Cage 13", cost: "2000"},
-    {text: "Cage 14", cost: "2000"},
-    {text: "Cage 15", cost: "2000"},
-    {text: "Cage 16", cost: "2000"},
+    {id: 1,text: "Cage 1", cost: "2000"},
+    {id: 1,text: "Cage 2", cost: "2000"},
+    {id: 1,text: "Cage 3", cost: "2000"},
+    {id: 1,text: "Cage 4", cost: "2000"},
+    {id: 1,text: "Cage 5", cost: "2000"},
+    {id: 1,text: "Cage 6", cost: "2000"},
+    {id: 1,text: "Cage 7", cost: "2000"},
+    {id: 1,text: "Cage 8", cost: "2000"},
+    {id: 1,text: "Cage 9", cost: "2000"},
+    {id: 1,text: "Cage 10", cost: "2000"},
+    {id: 1,text: "Cage 11", cost: "2000"},
+    {id: 1,text: "Cage 12", cost: "2000"},
+    {id: 1,text: "Cage 13", cost: "2000"},
+    {id: 1,text: "Cage 14", cost: "2000"},
+    {id: 1,text: "Cage 15", cost: "2000"},
+    {id: 1,text: "Cage 16", cost: "2000"},
   ];
 
 }

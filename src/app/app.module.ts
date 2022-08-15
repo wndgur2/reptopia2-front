@@ -11,6 +11,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { ShopComponent } from './components/shop/shop.component';
 import { BreedersComponent } from './components/breeders/breeders.component';
@@ -21,6 +23,13 @@ import { TemperaturesComponent } from './components/shop/temperatures/temperatur
 import { MaterialsComponent } from './components/shop/materials/materials.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { CommunityComponent } from './components/community/community.component';
+import { CageComponent } from './components/home/cage/cage.component';
+import { CageDetailComponent } from './components/shop/cages/cage-detail/cage-detail.component';
+import { TemperatureDetailComponent } from './components/shop/temperatures/temperature-detail/temperature-detail.component';
+import { MaterialDetailComponent } from './components/shop/materials/material-detail/material-detail.component';
+import { FoodDetailComponent } from './components/shop/foods/food-detail/food-detail.component';
+import { PostsComponent } from './components/community/posts/posts.component';
 
 
 @NgModule({
@@ -37,7 +46,14 @@ import { SignupComponent } from './components/signup/signup.component';
     MaterialsComponent,
     TemperaturesComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    CommunityComponent,
+    CageComponent,
+    CageDetailComponent,
+    TemperatureDetailComponent,
+    MaterialDetailComponent,
+    FoodDetailComponent,
+    PostsComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +62,10 @@ import { SignupComponent } from './components/signup/signup.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    MatTabsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,35 +1,39 @@
+.container{
+  padding: 5%;
+}
+
 .categories{
-  position: absolute;
-  left:25%;
-  width:50%;
-  top:13%;
-  display: flex;
   justify-content: center;
+  margin-top: 1.7%;
+  margin-bottom: 5%;
 }
 
 .active {
-  font-size: 18px;
-  background-color: lightgray;
+  font-size: 20px;
+  background-color: #212121;
+  color: white;
 }
 
 .category:not(.active){
-  font-size: 16px;
+  font-size: 18px;
+  color:black;
 }
 
 .category{
   font-weight:lighter;
   text-decoration: none;
-  color:black;
-  padding-left:3.5%;
-  padding-right:3.5%;
-  padding-top:2.5%;
-  padding-bottom:2.5%;
+  padding-left:2.3%;
+  padding-right:2.3%;
+  padding-top:1.5%;
+  padding-bottom:1.5%;
+  margin-right: 1.5%;
   text-align: center;
   transition: font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .category:hover:not(.active){
-  background-color: #F0F0F0;
+  background-color: #88888854;
+  font-size: 20px;
 }
 
 .tileContainer{
@@ -38,7 +42,8 @@
   text-align: center;
 }
 
-.tile{
+canvas{
+  cursor: pointer;
   align-self: center;
   background-color: lightgray;
   height: 80%;

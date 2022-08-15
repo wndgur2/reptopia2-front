@@ -1,16 +1,12 @@
-.background{
-  width:100%;
-  z-index: -1;
-}
-
-.container{
-  width:80%;
-  margin-top: 10%;
-  margin-left: 10%;
-  overflow-y: hidden !important;
+.header{
+  display: flex;
+  width: 100%;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+  z-index: 2;
 }
 
 @font-face {
-  font-family: jost-light;
-  src: url(../assets/fonts/jost-cufonfonts/Jost300Light.otf) format("opentype");
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("opentype");
 }

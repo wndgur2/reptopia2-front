@@ -1,8 +1,8 @@
-<div class="container" *ngFor="let c of creatures">
-  <mat-card [class.mat-elevation-z5]="true" class="breeder">
-    <div class="contents">
-      <canvas></canvas>
-      <div class="text">
+<div class="container">
+  <mat-grid-list cols="2" rowHeight="550px">
+    <mat-grid-tile *ngFor="let c of creatures">
+      <div class="tile">
+        <canvas></canvas>
         <div class="discription">
           <span class="species">{{c.getSpecies()}}</span>
           <span class="specification">
@@ -14,9 +14,11 @@
           </span>
           <div class="comment">{{c.comment}}</div>
           <div class="cost"><span>{{c.cost}} reppi</span></div>
+          <div class="adopt"><span>ADOPT</span></div>
         </div>
-        <div class="adopt"><span>ADOPT</span></div>
       </div>
-    </div>
-  </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+
 </div>

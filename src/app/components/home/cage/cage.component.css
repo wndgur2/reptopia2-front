@@ -1,0 +1,13 @@
+.container{
+  padding: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+.cage{
+  align-self: center;
+  background-color: lightgray;
+  height: 80%;
+  width: 97%;
+  margin-bottom: 2%;
+}

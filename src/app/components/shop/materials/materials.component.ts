@@ -18,22 +18,22 @@ export class MaterialsComponent implements OnInit {
   }
 
   tiles = [
-    {text: "Material 1"},
-    {text: "Material 2"},
-    {text: "Material 3"},
-    {text: "Material 4"},
-    {text: "Material 5"},
-    {text: "Material 6"},
-    {text: "Material 7"},
-    {text: "Material 8"},
-    {text: "Material 9"},
-    {text: "Material 10"},
-    {text: "Material 11"},
-    {text: "Material 12"},
-    {text: "Material 13"},
-    {text: "Material 14"},
-    {text: "Material 15"},
-    {text: "Material 16"},
+    {id: 1, text: "Material 1"},
+    {id: 1, text: "Material 2"},
+    {id: 1, text: "Material 3"},
+    {id: 1, text: "Material 4"},
+    {id: 1, text: "Material 5"},
+    {id: 1, text: "Material 6"},
+    {id: 1, text: "Material 7"},
+    {id: 1, text: "Material 8"},
+    {id: 1, text: "Material 9"},
+    {id: 1, text: "Material 10"},
+    {id: 1, text: "Material 11"},
+    {id: 1, text: "Material 12"},
+    {id: 1, text: "Material 13"},
+    {id: 1, text: "Material 14"},
+    {id: 1, text: "Material 15"},
+    {id: 1, text: "Material 16"},
   ];
 
 }

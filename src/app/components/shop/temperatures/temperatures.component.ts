@@ -18,22 +18,22 @@ export class TemperaturesComponent implements OnInit {
   }
 
   tiles = [
-    {text: "Temperature 1"},
-    {text: "Temperature 2"},
-    {text: "Temperature 3"},
-    {text: "Temperature 4"},
-    {text: "Temperature 5"},
-    {text: "Temperature 6"},
-    {text: "Temperature 7"},
-    {text: "Temperature 8"},
-    {text: "Temperature 9"},
-    {text: "Humidity 10"},
-    {text: "Humidity 11"},
-    {text: "Humidity 12"},
-    {text: "Humidity 13"},
-    {text: "Humidity 14"},
-    {text: "Humidity 15"},
-    {text: "Humidity 16"},
+    {id: 1, text: "Temperature 1"},
+    {id: 1, text: "Temperature 2"},
+    {id: 1, text: "Temperature 3"},
+    {id: 1, text: "Temperature 4"},
+    {id: 1, text: "Temperature 5"},
+    {id: 1, text: "Temperature 6"},
+    {id: 1, text: "Temperature 7"},
+    {id: 1, text: "Temperature 8"},
+    {id: 1, text: "Temperature 9"},
+    {id: 1, text: "Humidity 10"},
+    {id: 1, text: "Humidity 11"},
+    {id: 1, text: "Humidity 12"},
+    {id: 1, text: "Humidity 13"},
+    {id: 1, text: "Humidity 14"},
+    {id: 1, text: "Humidity 15"},
+    {id: 1, text: "Humidity 16"},
   ];
 
 }
