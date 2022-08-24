@@ -16,6 +16,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
 
 import { ShopComponent } from './components/shop/shop.component';
 import { BreedersComponent } from './components/breeders/breeders.component';
@@ -34,6 +36,7 @@ import { MaterialDetailComponent } from './components/shop/materials/material-de
 import { FoodDetailComponent } from './components/shop/foods/food-detail/food-detail.component';
 import { PostsComponent } from './components/community/posts/posts.component';
 import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
+import { PostComponent } from './components/community/post/post.component';
 
 
 @NgModule({
@@ -59,6 +62,7 @@ import { CreaturesComponent } from './components/breeders/creatures/creatures.co
     FoodDetailComponent,
     PostsComponent,
     CreaturesComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +77,8 @@ import { CreaturesComponent } from './components/breeders/creatures/creatures.co
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
+    MatDividerModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

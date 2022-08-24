@@ -1,0 +1,27 @@
+#container{
+  padding: 2%;
+}
+
+#title{
+  padding:1%;
+  padding-bottom: 3%;
+  margin: 0px;
+}
+
+.meta{
+  padding-top: 3%;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item{
+  margin-left: 1%;
+}
+
+#content{
+  padding-top: 5%;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}

@@ -52,9 +52,9 @@ const routes: Routes = [
 
   { path: 'community', redirectTo: '/community/posts/announcement', pathMatch: 'full' },
   { path: 'community', component: CommunityComponent, children: [
-    { path: 'posts/:boardType', component: PostsComponent }
+    { path: 'posts/:boardType', component: PostsComponent },
+    { path: 'posts/:boardType/post/:postId', component: PostComponent },
   ] },
-  { path: 'post/:postId', component: PostComponent },
   { path: 'user', component: UserComponent },
 ];
 

@@ -1,14 +1,16 @@
-<div class="container">
-  <div class="wrapper">
-    <mat-card class="username"><span>Username</span></mat-card>
-    <mat-card class="level"><span>User Level</span></mat-card>
-  </div>
-  <div class="wrapper">
-    <mat-card class="exp"><span>User Exp</span></mat-card>
-    <mat-card class="total"><span>Total creatures amount</span></mat-card>
-  </div>
-  <div class="wrapper">
-    <mat-card class="achievements"><span>Achievements</span></mat-card>
-  </div>
-  <button mat-raised-button color="primary" id="logout">Log out</button>
+<div id="container">
+  <mat-card id="userInfo" [class.mat-elevation-z6]="true" >
+    <span id="inform"><span id="id">wndgur2</span> 의 정보예요.</span>
+    <mat-list>
+      <mat-divider></mat-divider>
+      <div class="item"><span class="prop">이름</span> <span class="data">이중혁</span></div>
+      <mat-divider></mat-divider>
+      <div class="item"><span class="prop">레벨</span> <span class="data">1</span></div>
+      <mat-divider></mat-divider>
+      <div class="item"><span class="prop">생물</span> <span class="data">10 마리</span></div>
+      <mat-divider></mat-divider>
+      <div class="item"><span class="prop">업적</span> <span class="data">없음</span></div>
+      <button mat-raised-button id="logout" color="primary">로그아웃</button>
+    </mat-list>
+  </mat-card>
 </div>

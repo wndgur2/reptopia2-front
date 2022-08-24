@@ -1,6 +1,6 @@
   <mat-grid-list cols="1" rowHeight="500px">
     <mat-grid-tile *ngFor="let c of creatures">
-      <div class="tile">
+      <div class="tile" [class.mat-elevation-z5]="true">
         <canvas></canvas>
         <div class="discription">
           <span class="species">{{c.getSpecies()}}</span>

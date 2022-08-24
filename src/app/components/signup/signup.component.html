@@ -1,23 +1,21 @@
-<div id="container">
-  <div id="title"><span>Reptopia</span></div>
-  <div id="loginBox">
-    <div style="display: flex; flex-direction: row;">
-      <div id="indexes">
-        <div class="index"><span>ID</span></div>
-        <div class="index"><span>PW</span></div>
-        <div class="index"><span>Check PW</span></div>
-        <div class="index"><span>Nickname</span></div>
-      </div>
-      <div id="inputs">
-        <div class="in">wndgur2</div>
-        <div class="in pw">aaaaa</div>
-        <div class="in pw">aaaaaa</div>
-        <div class="in">fleonar</div>
-      </div>
-    </div>
-    <div id="buttons">
-      <div id="signIn" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">SIGN UP</div>
-      <div id="cancel" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">CANCEL</div>
-    </div>
-  </div>
+<div class="container">
+  <mat-card>
+    <span id="inform"> 이곳에 왔었죠? <br>얼굴이 익숙해서요.</span>
+    <form>
+      <mat-form-field appearance="legacy" color="primary">
+        <mat-label>아이디</mat-label>
+        <input matInput placeholder="welcome@to.reptopia">
+      </mat-form-field>
+      <mat-form-field appearance="legacy" color="primary">
+        <mat-label>암호</mat-label>
+        <input matInput type="password">
+      </mat-form-field>
+      <mat-form-field appearance="legacy" color="primary">
+        <mat-label>암호 확인</mat-label>
+        <input matInput type="password">
+      </mat-form-field>
+      <button mat-flat-button color="primary">계정 생성</button>
+      <a routerLink="/login">계정이 있나요?</a>
+    </form>
+  </mat-card>
 </div>
