@@ -13,6 +13,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 
 import { ShopComponent } from './components/shop/shop.component';
 import { BreedersComponent } from './components/breeders/breeders.component';
@@ -30,6 +33,7 @@ import { TemperatureDetailComponent } from './components/shop/temperatures/tempe
 import { MaterialDetailComponent } from './components/shop/materials/material-detail/material-detail.component';
 import { FoodDetailComponent } from './components/shop/foods/food-detail/food-detail.component';
 import { PostsComponent } from './components/community/posts/posts.component';
+import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
 
 
 @NgModule({
@@ -54,6 +58,7 @@ import { PostsComponent } from './components/community/posts/posts.component';
     MaterialDetailComponent,
     FoodDetailComponent,
     PostsComponent,
+    CreaturesComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,7 +70,9 @@ import { PostsComponent } from './components/community/posts/posts.component';
     MatCardModule,
     MatToolbarModule,
     MatTabsModule,
-
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

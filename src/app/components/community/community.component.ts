@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-community',
@@ -7,8 +6,6 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./community.component.css']
 })
 export class CommunityComponent implements OnInit {
-  boardControl = new FormControl('');
-  board?:string;
 
   constructor() { }
 

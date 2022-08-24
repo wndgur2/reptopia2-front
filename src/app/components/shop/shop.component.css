@@ -1,11 +1,23 @@
 .container{
-  padding: 5%;
+  padding: 20%;
+  padding-top: 5%;
 }
 
 .categories{
-  justify-content: center;
-  margin-top: 1.7%;
-  margin-bottom: 5%;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.category{
+  width: 25%;
+  font-weight:lighter;
+  text-decoration: none;
+  padding-top:2.5%;
+  padding-bottom:2.5%;
+  text-align: center;
+  transition: font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .active {
@@ -17,18 +29,6 @@
 .category:not(.active){
   font-size: 18px;
   color:black;
-}
-
-.category{
-  font-weight:lighter;
-  text-decoration: none;
-  padding-left:2.3%;
-  padding-right:2.3%;
-  padding-top:1.5%;
-  padding-bottom:1.5%;
-  margin-right: 1.5%;
-  text-align: center;
-  transition: font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .category:hover:not(.active){
@@ -47,6 +47,6 @@ canvas{
   align-self: center;
   background-color: lightgray;
   height: 80%;
-  width: 95%;
+  width: 100%;
   margin-bottom: 2%;
 }

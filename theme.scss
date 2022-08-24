@@ -1,0 +1,24 @@
+@import '~@angular/material/theming';
+$indigo-palette: (
+ 50: #848484,
+ 100: #424242,
+ 200: #212121,
+ 300: #398431,
+ 400: #060606,
+ 500: #030303,
+ 600: #010101,
+ 700: black,
+ contrast: (
+   50: rgba(white, 0.87),
+   100: rgba(white, 0.87),
+   200: rgba(white, 0.87),
+   300: rgba(white, 0.87),
+ )
+);
+@include mat-core();
+
+  $primary: mat-palette($indigo-palette,200);
+  $accent: mat-palette($indigo-palette,300);
+  $theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);

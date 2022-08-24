@@ -1,64 +1,41 @@
 .container{
-  min-height: 100%;
-  background-color: #212121;
-  padding: 5%;
-  padding-top: 3%;
-}
-
-.tile{
-  display: flex;
-  width: 90%;
-  height: 77%;
   background-color: white;
-  padding: 3%;
+  min-height: 100%;
+  padding: 20%;
+  padding-top: 5%;
 }
 
-canvas{
-  background-color: #212121;
-  width: 70%;
-  height: 100%;
-  margin: auto;
+.categories{
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7.6%;
 }
 
-.discription{
-  display: inline-block;
-  flex-direction: column;
-  line-height: 30px;
-  padding: 3%;
-  padding-top: 1%;
-  height: 90%;
-  width: 30%;
-}
 
-.cost{
-  font-size: 24px;
-}
-
-.species{
-  font-size: 26px;
-  display: block;
-  margin-bottom: 15%;
-  width: 100%;
-}
-
-.specification{
-  font-size: 19px;
-}
-
-.comment{
-  width: 100%;
-  font-size: 20px;
-  margin-top: 15%;
-  margin-bottom: 15%;
-  height: 20%;
-}
-
-.adopt{
-  width:100%;
-  background-color: black;
-  font-size: 22px;
-  color:white;
+.category{
+  width: 33%;
+  font-weight:lighter;
+  text-decoration: none;
+  padding-top:2.5%;
+  padding-bottom:2.5%;
   text-align: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  transition: font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+.active {
+  font-size: 20px;
+  background-color: #212121;
+  color: white;
+}
+
+.category:not(.active){
+  font-size: 18px;
+  color:black;
+}
+
+.category:hover:not(.active){
+  background-color: #88888854;
+  font-size: 20px;
+}
+

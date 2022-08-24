@@ -1,12 +1,9 @@
 <div class="container">
-  <mat-grid-list cols="2" rowHeight="500px">
-    <mat-grid-tile
-        *ngFor="let tile of tiles">
+  <mat-grid-list cols="3" rowHeight="450px">
+    <mat-grid-tile *ngFor="let tile of tiles">
       <div class="tileContainer">
-        <div class="cage" [class.mat-elevation-z5]="true" [routerLink]="['/cage', tile.id]">
-          <canvas ></canvas>
-        </div>
-        <span class="itemText"> {{tile.text}} </span> <br>
+        <canvas class="cage" [class.mat-elevation-z5]="true" [routerLink]="['/cage', tile.id]"></canvas>
+        <span class="itemText"> {{tile.text}} </span>
       </div>
     </mat-grid-tile>
   </mat-grid-list>

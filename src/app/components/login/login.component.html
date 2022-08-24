@@ -1,15 +1,17 @@
-<div id="container">
-  <div id="title"><span>Reptopia</span></div>
-  <div id="loginBox">
-    <div id="inputs">
-      <div id="id">asd</div>
-      <div id="pw">ss</div>
-    </div>
-    <div id="buttons">
-      <div id="logIn" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">LOG IN</div>
-      <div id="signIn" routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">SIGN UP</div>
-      <div id="findId" style="color: #4b4b4b">FIND ID</div>
-      <div id="resetPw">RESET PW</div>
-    </div>
-  </div>
+<div class="container">
+  <mat-card>
+    <span id="welcome"> Reptopia에 오셨네요? <br>행운을 빌게요.</span>
+    <form>
+      <mat-form-field appearance="legacy" color="primary">
+        <mat-label>아이디</mat-label>
+        <input matInput placeholder="welcome@to.reptopia">
+      </mat-form-field>
+      <mat-form-field appearance="legacy" color="primary">
+        <mat-label>암호</mat-label>
+        <input matInput type="password">
+      </mat-form-field>
+      <button mat-flat-button color="primary">로그인</button>
+      <a>... 계정이 없나요?</a>
+    </form>
+  </mat-card>
 </div>

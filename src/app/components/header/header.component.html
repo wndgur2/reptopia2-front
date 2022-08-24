@@ -1,10 +1,13 @@
-<mat-toolbar id="toolbarContainer">
-  <a id="title" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
-    <img src="../../../assets/images/logo.png" height="36px"><span>Reptopia</span>
-  </a>
-  <a class="menu" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-  <a class="menu" routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">Shop</a>
-  <a class="menu" routerLink="/breeders" routerLinkActive="active" ariaCurrentWhenActive="page">Breeders</a>
-  <a class="menu" routerLink="/community" routerLinkActive="active" ariaCurrentWhenActive="page">Community</a>
-  <a class="menu" routerLink="/user" routerLinkActive="active" ariaCurrentWhenActive="page">Me</a>
+<mat-toolbar id="toolbarContainer" color="primary">
+  <div id="toolbar">
+    <a id="title" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <img src="../../../assets/images/logo.png" height="36px"><span>렙토피아</span>
+    </a>
+    <a class="menu" routerLink="/community" routerLinkActive="active" ariaCurrentWhenActive="page">커뮤니티</a>
+    <a class="menu" routerLink="/shop" routerLinkActive="active" ariaCurrentWhenActive="page">샵</a>
+    <a class="menu" routerLink="/breeders" routerLinkActive="active" ariaCurrentWhenActive="page">입양</a>
+    <div id="meOut">
+      <a class="menu" id="meIn" routerLink="/user" routerLinkActive="active" ariaCurrentWhenActive="page">Me</a>
+    </div>
+  </div>
 </mat-toolbar>

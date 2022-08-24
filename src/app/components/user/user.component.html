@@ -1,9 +1,14 @@
 <div class="container">
-  <div class="username"><span>Username</span></div>
-  <div class="level"><span>User Level</span></div>
-  <div class="exp"><span>User Exp</span></div>
-  <div class="total"><span>Total creatures amount</span></div>
-  <div class="achievements"><span>Achievements</span></div>
-  <div class="scrape"><div> O O O </div><span>SCRAPE</span></div>
-  <span><button mat-stroked-button>LOGOUT</button></span>
+  <div class="wrapper">
+    <mat-card class="username"><span>Username</span></mat-card>
+    <mat-card class="level"><span>User Level</span></mat-card>
+  </div>
+  <div class="wrapper">
+    <mat-card class="exp"><span>User Exp</span></mat-card>
+    <mat-card class="total"><span>Total creatures amount</span></mat-card>
+  </div>
+  <div class="wrapper">
+    <mat-card class="achievements"><span>Achievements</span></mat-card>
+  </div>
+  <button mat-raised-button color="primary" id="logout">Log out</button>
 </div>

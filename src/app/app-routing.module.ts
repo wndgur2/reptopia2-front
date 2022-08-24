@@ -18,14 +18,20 @@ import { TemperatureDetailComponent } from './components/shop/temperatures/tempe
 import { MaterialDetailComponent } from './components/shop/materials/material-detail/material-detail.component';
 import { PostComponent } from './components/community/post/post.component';
 import { PostsComponent } from './components/community/posts/posts.component';
+import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+
   { path: 'signup', component: SignupComponent },
-  { path: 'cage/:cageId', component: CageComponent },
+
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+
   { path: 'home', component: HomeComponent},
+
+  { path: 'cage/:cageId', component: CageComponent },
+
   { path: 'shop', redirectTo: '/shop/cages', pathMatch: 'full' },
   { path: 'shop', component: ShopComponent, children: [
     { path: 'cages', component: CagesComponent},
@@ -33,13 +39,18 @@ const routes: Routes = [
     { path: 'temperatures', component: TemperaturesComponent},
     { path: 'materials', component: MaterialsComponent},
   ]},
+
   { path: 'shop/cages/cageDetail/:itemId', component: CageDetailComponent },
   { path: 'shop/foods/foodDetail/:itemId', component: FoodDetailComponent },
   { path: 'shop/temperatures/temperatureDetail/:itemId', component: TemperatureDetailComponent },
   { path: 'shop/materials/materialDetail/:itemId', component: MaterialDetailComponent },
-  { path: 'breeders', component: BreedersComponent },
 
-  { path: 'community', redirectTo: '/community/posts/alert', pathMatch: 'full' },
+  { path: 'breeders', redirectTo: '/breeders/creatures/all', pathMatch: 'full' },
+  { path: 'breeders', component: BreedersComponent, children:[
+    {path: 'creatures/:species', component: CreaturesComponent}
+  ] },
+
+  { path: 'community', redirectTo: '/community/posts/announcement', pathMatch: 'full' },
   { path: 'community', component: CommunityComponent, children: [
     { path: 'posts/:boardType', component: PostsComponent }
   ] },

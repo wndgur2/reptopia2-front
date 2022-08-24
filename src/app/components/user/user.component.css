@@ -1,27 +1,29 @@
 .container{
   height: 100rem;
+  padding: 5%;
 }
 
-.username{
-
+mat-card{
+  padding: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 45%;
 }
 
-.level{
-
+button{
+  margin: 1%;
 }
 
-.exp{
-
+#logout{
+  padding: 0.2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  letter-spacing: 1px;
 }
 
-.total{
-
-}
-
-.achievements{
-
-}
-
-.scrape{
-
+.wrapper{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width:100%;
+  display: flex;
 }

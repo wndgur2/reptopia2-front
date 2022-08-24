@@ -1,8 +1,8 @@
 <div class="container">
   <div class="categories">
-    <button mat-button [routerLink]="['/community/posts', 'alert']" routerLinkActive="active" ariaCurrentWhenActive="page">공지사항</button>
-    <button mat-button [routerLink]="['/community/posts', 'best']" routerLinkActive="active" ariaCurrentWhenActive="page">베스트</button>
-    <button mat-button [routerLink]="['/community/posts', 'whatever']" routerLinkActive="active" ariaCurrentWhenActive="page">자유글</button>
+    <a class="category" [routerLink]="['/community/posts', 'announcement']" routerLinkActive="active" ariaCurrentWhenActive="page">공지사항</a>
+    <a class="category" [routerLink]="['/community/posts', 'best']" routerLinkActive="active" ariaCurrentWhenActive="page">베스트</a>
+    <a class="category" [routerLink]="['/community/posts', 'whatever']" routerLinkActive="active" ariaCurrentWhenActive="page">자유글</a>
   </div>
   <router-outlet></router-outlet>
 </div>
