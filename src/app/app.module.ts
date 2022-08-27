@@ -30,13 +30,10 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { CommunityComponent } from './components/community/community.component';
 import { CageComponent } from './components/home/cage/cage.component';
-import { CageDetailComponent } from './components/shop/cages/cage-detail/cage-detail.component';
-import { TemperatureDetailComponent } from './components/shop/temperatures/temperature-detail/temperature-detail.component';
-import { MaterialDetailComponent } from './components/shop/materials/material-detail/material-detail.component';
-import { FoodDetailComponent } from './components/shop/foods/food-detail/food-detail.component';
 import { PostsComponent } from './components/community/posts/posts.component';
 import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
 import { PostComponent } from './components/community/post/post.component';
+import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
 
 
 @NgModule({
@@ -56,13 +53,10 @@ import { PostComponent } from './components/community/post/post.component';
     SignupComponent,
     CommunityComponent,
     CageComponent,
-    CageDetailComponent,
-    TemperatureDetailComponent,
-    MaterialDetailComponent,
-    FoodDetailComponent,
     PostsComponent,
     CreaturesComponent,
-    PostComponent
+    PostComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,

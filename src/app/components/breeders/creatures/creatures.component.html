@@ -1,10 +1,11 @@
-  <mat-grid-list cols="1" rowHeight="500px">
+  <mat-grid-list cols="1" rowHeight="480px">
     <mat-grid-tile *ngFor="let c of creatures">
-      <div class="tile" [class.mat-elevation-z5]="true">
+      <div class="tile" [class.mat-elevation-z3]="true">
         <canvas></canvas>
         <div class="discription">
           <span class="species">{{c.getSpecies()}}</span>
           <span class="specification">
+
             <div class="propWrapper">
               <span class="prop">
                 이름&nbsp;&nbsp;{{c.name}}
@@ -21,11 +22,18 @@
               길이&nbsp;&nbsp;{{c.length}}cm
             </span>
           </div>
-            생일&nbsp;&nbsp;21.11.08
+          <div class="propWrapper">
+            <span class="prop">
+              나이&nbsp;&nbsp;3개월
+            </span>
+            <span class="prop">
+              가격&nbsp;&nbsp;{{c.cost}} R
+            </span>
+          </div>
           </span>
+
           <div id="low">
-            <mat-card class="comment">{{c.comment}}</mat-card>
-            <div class="cost"><span>{{c.cost}} R</span></div>
+            <div class="comment">{{c.comment}}</div>
             <button mat-flat-button class="adopt" color="primary"><span>ADOPT</span></button>
           </div>
         </div>

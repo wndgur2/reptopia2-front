@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="categories">
+  <div class="categories" [class.mat-elevation-z1]="true">
     <a class="category" [routerLink]="['/community/posts', 'announcement']" routerLinkActive="active" ariaCurrentWhenActive="page">공지</a>
     <a class="category" [routerLink]="['/community/posts', 'best']" routerLinkActive="active" ariaCurrentWhenActive="page">인기</a>
     <a class="category" [routerLink]="['/community/posts', 'whatever']" routerLinkActive="active" ariaCurrentWhenActive="page">최근</a>

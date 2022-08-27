@@ -1,10 +1,11 @@
 .container{
   padding: 20%;
   padding-top: 5%;
+  background-color: #fafafd;
 }
 
 .categories{
-  background-color: #eeeeee;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10%;
@@ -21,19 +22,19 @@
 }
 
 .active {
-  font-size: 19px;
+  font-size: 18px;
   background-color: #212121;
   color: white;
 }
 
 .category:not(.active){
-  font-size: 18px;
+  font-size: 17px;
   color:black;
 }
 
 .category:hover:not(.active){
   background-color: #88888854;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .tileContainer{
@@ -46,7 +47,7 @@ canvas{
   cursor: pointer;
   align-self: center;
   background-color: lightgray;
-  height: 80%;
+  height: calc( 100% - 80px);
   width: 100%;
   margin-bottom: 2%;
 }

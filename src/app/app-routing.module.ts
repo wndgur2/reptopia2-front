@@ -12,13 +12,10 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { CommunityComponent } from './components/community/community.component';
 import { CageComponent } from './components/home/cage/cage.component';
-import { CageDetailComponent } from './components/shop/cages/cage-detail/cage-detail.component';
-import { FoodDetailComponent } from './components/shop/foods/food-detail/food-detail.component';
-import { TemperatureDetailComponent } from './components/shop/temperatures/temperature-detail/temperature-detail.component';
-import { MaterialDetailComponent } from './components/shop/materials/material-detail/material-detail.component';
 import { PostComponent } from './components/community/post/post.component';
 import { PostsComponent } from './components/community/posts/posts.component';
 import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
+import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
 
 
 const routes: Routes = [
@@ -26,9 +23,11 @@ const routes: Routes = [
 
   { path: 'signup', component: SignupComponent },
 
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home/all', pathMatch: 'full' },
 
-  { path: 'home', component: HomeComponent},
+  { path: 'home', component: HomeComponent, children: [
+    {path: ':species', component: CreaturesComponent}
+  ]},
 
   { path: 'cage/:cageId', component: CageComponent },
 
@@ -38,12 +37,12 @@ const routes: Routes = [
     { path: 'foods', component: FoodsComponent},
     { path: 'temperatures', component: TemperaturesComponent},
     { path: 'materials', component: MaterialsComponent},
+    { path: 'cages/itemDetail/:itemId', component: ItemDetailComponent },
+    { path: 'foods/itemDetail/:itemId', component: ItemDetailComponent },
+    { path: 'temperatures/itemDetail/:itemId', component: ItemDetailComponent },
+    { path: 'materials/itemDetail/:itemId', component: ItemDetailComponent },
   ]},
 
-  { path: 'shop/cages/cageDetail/:itemId', component: CageDetailComponent },
-  { path: 'shop/foods/foodDetail/:itemId', component: FoodDetailComponent },
-  { path: 'shop/temperatures/temperatureDetail/:itemId', component: TemperatureDetailComponent },
-  { path: 'shop/materials/materialDetail/:itemId', component: MaterialDetailComponent },
 
   { path: 'breeders', redirectTo: '/breeders/creatures/all', pathMatch: 'full' },
   { path: 'breeders', component: BreedersComponent, children:[

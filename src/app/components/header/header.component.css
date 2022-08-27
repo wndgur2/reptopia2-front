@@ -1,25 +1,26 @@
 #toolbarContainer{
-  padding-left: 16%;
-  padding-right: 16%;
+  padding-left: 18%;
+  padding-right: 18%;
+  font-family: 'Nanum Gothic', serif;
   box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
 }
 
 #toolbar{
   display: flex;
   width: 100%;
-  padding-left: 1.5%;
+  padding-left: 3%;
   padding-right: 3%;
   align-items: center;
 }
 
 img{
-  margin-right: 15%;
+  margin-right: 5%;
 }
 
 #title{
   display: flex;
   color: white;
-  margin-right: 5%;
+  margin-right: 4%;
   text-decoration: none;
 }
 
@@ -27,15 +28,18 @@ img{
   display: block;
   margin: auto;
   font-size: 22px;
-  font-weight: lighter;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 300;
 }
 
 .menu{
   padding: 1%;
+  margin-left: 1%;
   text-decoration: none;
   color: white;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
+  letter-spacing: 3px;
 }
 
 #meOut{
@@ -46,6 +50,6 @@ img{
 
 #meIn{
   height: 100%;
-  margin-right: 5%;
+  margin-right: 0px;
   margin-left: auto;
 }

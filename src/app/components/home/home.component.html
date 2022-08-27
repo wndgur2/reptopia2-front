@@ -1,15 +1,21 @@
 <div class="container">
-  <div id="container2">
-    <mat-grid-list cols="3" rowHeight="450px">
-      <mat-grid-tile *ngFor="let tile of tiles"
-        [colspan]="tile.cols"
-        [rowspan]="tile.rows"
-      >
-        <div class="tileContainer" [class.mat-elevation-z5]="true" >
-          <canvas class="cage" [routerLink]="['/cage', tile.id]"></canvas>
-          <span class="itemText"> {{tile.text}} </span>
-        </div>
-      </mat-grid-tile>
-    </mat-grid-list>
+
+  <div class="categories" [class.mat-elevation-z1]="true">
+    <a class="category" [routerLink]="['/home', 'all']" routerLinkActive="active" ariaCurrentWhenActive="page">모두</a>
+    <a class="category" [routerLink]="['/home', 'leopard']" routerLinkActive="active" ariaCurrentWhenActive="page">레오파드 게코</a>
+    <a class="category" [routerLink]="['/home', 'crested']" routerLinkActive="active" ariaCurrentWhenActive="page">크레스티드 게코</a>
+    <a class="category" [routerLink]="['/home', 'ball']" routerLinkActive="active" ariaCurrentWhenActive="page">볼 파이톤</a>
   </div>
+
+  <mat-grid-list cols="2" rowHeight="455px">
+    <mat-grid-tile *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+    >
+      <div class="tileContainer" [class.mat-elevation-z1]="true">
+        <canvas class="cage" [routerLink]="['/cage', tile.id]"></canvas>
+        <span class="itemText"> {{tile.text}} </span>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>

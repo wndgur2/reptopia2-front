@@ -1,12 +1,6 @@
 .header{
   display: flex;
   width: 100%;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
-  z-index: 2;
 }
 
-@font-face {
-  font-family: roboto, sans-serif;
-  font-weight: 400;
-  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format("opentype");
-}
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');

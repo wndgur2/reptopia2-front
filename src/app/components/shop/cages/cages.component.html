@@ -1,7 +1,7 @@
   <mat-grid-list [cols]="colSize" [rowHeight]="rowHeight">
     <mat-grid-tile *ngFor="let cage of tiles">
       <div class="tileContainer">
-        <canvas [class.mat-elevation-z5]="true" [routerLink]="['cageDetail', cage.id]"></canvas>
+        <canvas [class.mat-elevation-z5]="true" [routerLink]="['/shop/cages/itemDetail', cage.id]"></canvas>
         <span class="itemText"> {{cage.text}} </span> <br>
         <span class="itemText"> {{cage.cost}} R </span>
       </div>

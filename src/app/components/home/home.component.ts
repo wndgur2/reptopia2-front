@@ -17,7 +17,7 @@ export class HomeComponent{
   tiles: Tile[] = [
     {id: 0,text: '도돌이, 양이', cols: 1, rows: 1, color: 'lightblue'},
     {id: 1,text: 'Two', cols: 1, rows: 1, color: 'lightgreen'},
-    {id: 2,text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {id: 2,text: 'Three', cols: 2, rows: 1, color: 'lightpink'},
     {id: 3,text: 'Four', cols: 1, rows: 1, color: '#DDBDF1'},
     {id: 4,text: 'One', cols: 2, rows: 1, color: 'lightblue'},
     {id: 5,text: 'Two', cols: 1, rows: 1, color: 'lightgreen'},

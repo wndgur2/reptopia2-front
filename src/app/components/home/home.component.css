@@ -1,31 +1,60 @@
 .container{
-  padding:7%;
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(34, 34, 34) 70%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(0deg, #ababaf 0%, #eeeef4 100%);
+  padding:20%;
+  padding-top: 5%;
 }
 
-#container2{
+.categories{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7.6%;
+}
+
+.category{
+  width: 33%;
+  font-weight:lighter;
+  text-decoration: none;
+  padding-top:2.5%;
+  padding-bottom:2.5%;
+  text-align: center;
+  transition: font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.active {
+  font-size: 18px;
   background-color: #212121;
-  padding: 1%;
+  color: white;
+}
+
+.category:not(.active){
+  font-size: 17px;
+  color:black;
+}
+
+.category:hover:not(.active){
+  background-color: #88888854;
+  font-size: 19px;
 }
 
 .tileContainer{
+  background-color: white;
   display: flex;
   flex-direction: column;
-  height: calc(100% - 20px);
-  width: calc(100% - 20px);
-  align-self: flex-end;
-  background-color: rgb(255, 255, 255);
+  height: calc(100% - 30px);
+  width: calc(100% - 5px);
+  align-self: flex-start;
 }
 
 .cage{
   cursor: pointer;
-  background-color: lightgray;
-  height: calc(100% - 50px);
+  background-color: black;
+  height: calc(100% - 34px);
   width: 100%;
 }
 
 .itemText{
-  padding:1%;
   text-align: center;
-  color: rgb(0, 0, 0);
+  line-height: 34px;
+  color: black;
 }

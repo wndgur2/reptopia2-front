@@ -1,6 +1,7 @@
 .container{
   padding: 20%;
   padding-top: 5%;
+  background: linear-gradient(0deg, white 82%, #fafafd 100%);
 }
 
 .board{
@@ -47,7 +48,7 @@
 }
 
 .categories{
-  background-color: #eeeeee;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10%;

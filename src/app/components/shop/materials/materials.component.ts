@@ -8,7 +8,7 @@ import { getHeightCol } from '../consts';
 })
 export class MaterialsComponent implements OnInit {
 
-  sizes = getHeightCol(50, 25);
+  sizes = getHeightCol(30, 25);
   rowHeight = this.sizes[0];
   colSize = this.sizes[1];
 
@@ -18,22 +18,22 @@ export class MaterialsComponent implements OnInit {
   }
 
   tiles = [
-    {id: 1, text: "Material 1"},
-    {id: 1, text: "Material 2"},
-    {id: 1, text: "Material 3"},
-    {id: 1, text: "Material 4"},
-    {id: 1, text: "Material 5"},
-    {id: 1, text: "Material 6"},
-    {id: 1, text: "Material 7"},
-    {id: 1, text: "Material 8"},
-    {id: 1, text: "Material 9"},
-    {id: 1, text: "Material 10"},
-    {id: 1, text: "Material 11"},
-    {id: 1, text: "Material 12"},
-    {id: 1, text: "Material 13"},
-    {id: 1, text: "Material 14"},
-    {id: 1, text: "Material 15"},
-    {id: 1, text: "Material 16"},
+    {id: 1, text: "Material 1", cost: 100},
+    {id: 1, text: "Material 2", cost: 100},
+    {id: 1, text: "Material 3", cost: 100},
+    {id: 1, text: "Material 4", cost: 100},
+    {id: 1, text: "Material 5", cost: 100},
+    {id: 1, text: "Material 6", cost: 100},
+    {id: 1, text: "Material 7", cost: 100},
+    {id: 1, text: "Material 8", cost: 100},
+    {id: 1, text: "Material 9", cost: 100},
+    {id: 1, text: "Material 10", cost: 100},
+    {id: 1, text: "Material 11", cost: 100},
+    {id: 1, text: "Material 12", cost: 100},
+    {id: 1, text: "Material 13", cost: 100},
+    {id: 1, text: "Material 14", cost: 100},
+    {id: 1, text: "Material 15", cost: 100},
+    {id: 1, text: "Material 16", cost: 100},
   ];
 
 }
