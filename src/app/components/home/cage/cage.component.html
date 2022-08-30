@@ -1,6 +1,55 @@
 <div class="container">
-  <div class="cage" [class.mat-elevation-z1]="false">
-    <canvas ></canvas>
+  <div class="wrapper" [class.mat-elevation-z1]="true">
+    <canvas class="cage" ></canvas>
+    <div id="rightSide">
+      <div id="informations">
+        <div class="info">
+          <p class="infoTitle">생물</p>
+          <p>{{cage.text}}</p>
+          <p>종: 크레스티드 게코</p>
+          <p class="infoTorphs">
+            <span class="morph">할리퀸 75</span>
+            <span class="morph">레드 35</span>
+            <span class="morph">드리퍼 3</span>
+            <span class="morph">핀 99</span>
+          </p>
+          <p>성별: 수컷</p>
+          <p>크기: 13cm</p>
+          <p>무게: 30g</p>
+          <p>생일: 2019.4.30</p>
+          <p>스트레스: 6/10</p>
+        </div>
+        <div class="info">
+          <p class="infoTitle">사육장</p>
+          <p>크기: 30 x 30 x 45</p>
+          <p>온도: 25'C</p>
+          <p>습도: 50%</p>
+          <p>위생: 1/10</p>
+          <p>바이오 지수: 0/10</p>
+          <p>환기율: 5/10</p>
+        </div>
+        <div class="info">
+          <p class="infoTitle">물품</p>
+          <p>히팅 램프 25w</p>
+          <p>코코넛 은신처 소</p>
+          <p>온도계</p>
+          <p>습도계</p>
+          <p>에코 피트</p>
+          <p>인조 식물 소</p>
+          <p>유목 중</p>
+        </div>
+      </div>
+      <div id="buttons">
+        <button mat-button [class.mat-elevation-z1]="true">피딩</button>
+        <button mat-button [class.mat-elevation-z1]="true">물뿌리기</button>
+        <button mat-button [class.mat-elevation-z1]="true">청소</button>
+        <button mat-button [class.mat-elevation-z1]="true">사육장 재구성</button>
+        <button mat-button [class.mat-elevation-z1]="true">무게 측정</button>
+        <button mat-button [class.mat-elevation-z1]="true">성별 감정</button>
+        <button mat-button [class.mat-elevation-z1]="true">성별 감정</button>
+        <button mat-button [class.mat-elevation-z1]="true">성별 감정</button>
+        <button mat-button [class.mat-elevation-z1]="true">성별 감정</button>
+      </div>
+    </div>
   </div>
-  <span class="itemText"> {{cage.text}} </span> <br>
 </div>

@@ -1,12 +1,11 @@
+<app-tip></app-tip>
 <div class="container">
-
   <div class="categories" [class.mat-elevation-z1]="true">
     <a class="category" [routerLink]="['/home', 'all']" routerLinkActive="active" ariaCurrentWhenActive="page">모두</a>
     <a class="category" [routerLink]="['/home', 'leopard']" routerLinkActive="active" ariaCurrentWhenActive="page">레오파드 게코</a>
     <a class="category" [routerLink]="['/home', 'crested']" routerLinkActive="active" ariaCurrentWhenActive="page">크레스티드 게코</a>
     <a class="category" [routerLink]="['/home', 'ball']" routerLinkActive="active" ariaCurrentWhenActive="page">볼 파이톤</a>
   </div>
-
   <mat-grid-list cols="2" rowHeight="455px">
     <mat-grid-tile *ngFor="let tile of tiles"
       [colspan]="tile.cols"

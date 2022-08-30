@@ -34,6 +34,7 @@ import { PostsComponent } from './components/community/posts/posts.component';
 import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
 import { PostComponent } from './components/community/post/post.component';
 import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
+import { TipComponent } from './components/tip/tip.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { ItemDetailComponent } from './components/shop/item-detail/item-detail.c
     PostsComponent,
     CreaturesComponent,
     PostComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    TipComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,65 @@
 .container{
-  padding: 5%;
-  width: 90%;
-  height: 90%;
+  background-color: #eeeef4;
+  padding: 10%;
+  padding-top: 7%;
+}
+
+.wrapper{
+  height: 30rem;
+  display: flex;
 }
 
 .cage{
-  align-self: center;
+  display: flex;
+  justify-content: center;
   background-color: lightgray;
-  height: 80%;
-  width: 97%;
-  margin-bottom: 2%;
+  width: 50%;
+}
+
+#rightSide{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fafaff;
+  width: 100%;
+  padding: 3%;
+}
+
+#informations{
+  padding: 1%;
+  display: flex;
+}
+
+.info{
+  padding: 1%;
+  width: 33%;
+}
+
+.infoTitle{
+  display: block;
+  font-size: 13px;
+  color: #343434;
+  line-height: 40px;
+}
+
+.morph{
+  display: inline-flex;
+  padding: 1%;
+  margin: 3%;
+  margin-top: 0%;
+  margin-left: 0%;
+  background-color: #212121;
+  color: white;
+}
+
+#buttons{
+  display: block;
+  padding: 1%;
+}
+
+button{
   border-radius: 0px;
+  margin: 1%;
+  background-color: #ededf3;
+  letter-spacing: 1.5px;
 }

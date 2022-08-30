@@ -7,7 +7,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./cage.component.css']
 })
 export class CageComponent implements OnInit {
-  cage = {id: 0,text: '도돌이, 양이', cols: 90, rows: 60, color: 'lightblue'};
+  cage = {id: 0,text: '도돌이', cols: 90, rows: 60, color: 'lightblue'};
   constructor() {}
 
   ngOnInit(): void {
