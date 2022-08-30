@@ -9,7 +9,7 @@
 
 .cage{
   cursor: pointer;
-  background-color: black;
+  background-color: lightgray;
   height: calc(100% - 34px);
   width: 100%;
 }

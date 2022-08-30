@@ -47,7 +47,10 @@
   border-radius: 0px;
   border: none;
   width: 10%;
-  background-color: #fafafd;
+  background-color: #fefeff;
+  color: #1e5a11;
+  letter-spacing: 3px;
+  font-size: 13px;
 }
 
 #comments{

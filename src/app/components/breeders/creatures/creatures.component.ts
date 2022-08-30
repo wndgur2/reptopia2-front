@@ -3,9 +3,9 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
 enum Species {
-  CrestedGecko,
-  LeopardGecko,
-  BallPython
+  "크레스티드 게코",
+  "레오파드 게코",
+  "볼 파이톤"
 }
 
 enum CrestedGeckoMorph{
@@ -64,6 +64,6 @@ export class CreaturesComponent implements OnInit {
     ));
   }
 
-  creatures = [new creature("삐용이", 0, 10, 23, 300, "슈푸보단 충식 선호합니다. 슈푸를 주실때는 어떻게 어떻게 주시면 먹긴 먹습니다."), new creature("꼬북이", 1, 15, 33, 150, "먹성 개좋습니다."), new creature("장숙이", 2, 33, 39, 200, "발색 올라오는중."),new creature("삐용이", 0, 10, 23, 300, "슈푸보단 충식 선호합니다."), new creature("꼬북이", 1, 15, 33, 150, "먹성 개좋습니다."), new creature("장숙이", 2, 33, 39, 200, "발색 올라오는중."),new creature("삐용이", 0, 10, 23, 300, "슈푸보단 충식 선호합니다."), new creature("꼬북이", 1, 15, 33, 150, "먹성 개좋습니다."), new creature("장숙이", 2, 33, 39, 200, "발색 올라오는중.")];
+  creatures = [new creature("꼬북이", 1, 15, 33, 150, "먹성 개좋습니다."), new creature("장숙이", 2, 33, 39, 200, "발색 올라오는중."),new creature("삐용이", 0, 10, 23, 300, "슈푸보단 충식 선호합니다."), new creature("꼬북이", 1, 15, 33, 150, "먹성 개좋습니다."), new creature("장숙이", 2, 33, 39, 200, "발색 올라오는중.")];
 
 }

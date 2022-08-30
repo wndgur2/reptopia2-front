@@ -2,10 +2,10 @@
   background-color: #eeeef4;
   padding: 10%;
   padding-top: 7%;
+  height: 32.7rem;
 }
 
 .wrapper{
-  height: 30rem;
   display: flex;
 }
 
@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #fafaff;
-  width: 100%;
+  width: 50%;
   padding: 3%;
 }
 
@@ -48,7 +48,7 @@
   margin: 3%;
   margin-top: 0%;
   margin-left: 0%;
-  background-color: #212121;
+  background-color: #226413;
   color: white;
 }
 

@@ -13,7 +13,7 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 .category{
@@ -23,21 +23,22 @@
   padding-top:2%;
   padding-bottom:2%;
   text-align: center;
-  transition: font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  color:black;
+  transition: font-size 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 .active {
-  font-size: 18px;
-  background-color: #212121;
+  font-size: 17px;
+  background-color: #2b8a16;
   color: white;
 }
 
 .category:not(.active){
-  font-size: 17px;
-  color:black;
+  font-size: 16px;
+  color: black;
 }
 
 .category:hover:not(.active){
-  background-color: #88888854;
-  font-size: 19px;
+  background-color: #2fff0030;
+  font-size: 17px;
 }

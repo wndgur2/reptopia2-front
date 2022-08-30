@@ -11,11 +11,11 @@
   <mat-divider></mat-divider>
   <div id="comments">
     <form id="commentForm">
-      <mat-form-field id="commentInput" appearance="legacy">
+      <mat-form-field id="commentInput" appearance="legacy" color="primary">
         <mat-label>의견 남기기</mat-label>
         <textarea [cdkTextareaAutosize]="true" id="commentInputText" matInput placeholder="할 말이 있으신가요?"></textarea>
       </mat-form-field>
-      <button id="submit" [class.mat-elevation-z1]="true" type="submit">등록</button>
+      <button id="submit" mat-raised-button type="submit">등록</button>
     </form>
     <div class="comment">
       <div class="commentMeta">

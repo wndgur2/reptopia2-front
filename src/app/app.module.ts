@@ -18,6 +18,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 import { ShopComponent } from './components/shop/shop.component';
 import { BreedersComponent } from './components/breeders/breeders.component';
@@ -75,6 +76,7 @@ import { TipComponent } from './components/tip/tip.component';
     MatSelectModule,
     MatDividerModule,
     MatListModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
