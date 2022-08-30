@@ -3,4 +3,41 @@
   width: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+.container{
+  padding: 20%;
+  padding-top: 5%;
+  background-color: #fafafd;
+}
+
+.categories{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.category{
+  width: 25%;
+  font-weight:lighter;
+  text-decoration: none;
+  padding-top:2%;
+  padding-bottom:2%;
+  text-align: center;
+  transition: font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.active {
+  font-size: 18px;
+  background-color: #212121;
+  color: white;
+}
+
+.category:not(.active){
+  font-size: 17px;
+  color:black;
+}
+
+.category:hover:not(.active){
+  background-color: #88888854;
+  font-size: 19px;
+}

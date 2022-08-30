@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-community',
   templateUrl: './community.component.html',
-  styleUrls: ['./community.component.css']
+  styleUrls: ['./community.component.css', '../../app.component.css']
 })
 export class CommunityComponent implements OnInit {
 

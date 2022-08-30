@@ -1,10 +1,10 @@
-
 .tile{
   background-color: white;
   display: flex;
   width: 98%;
-  height: 83%;
+  height: 90%;
   overflow: hidden;
+  align-self: flex-start !important;
 }
 
 canvas{
@@ -69,7 +69,6 @@ canvas{
   justify-content: space-between;
   padding-bottom: 5%;
 }
-
 
 .prop{
   width: 40%;
