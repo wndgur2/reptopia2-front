@@ -1,26 +1,26 @@
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 $indigo-palette: (
- 50: #2b8a16,
- 100: #2b8a16,
- 200: #2d8f20,
- 300: #45d924,
- 400: #0a3600,
- 500: #2b8a16,
- 600: #2b8a16,
- 700: #2b8a16,
- contrast: (
-   50: rgba(white, 0.87),
-   100: rgba(white, 0.87),
-   200: rgba(white, 0.87),
-   300: rgba(white, 0.87),
-   400: rgba(white, 0.87),
- )
+  50: #252525,
+  100: #252525,
+  200: #252525,
+  300: #252525,
+  400: #252525,
+  500: #252525,
+  600: #252525,
+  700: #252525,
+  contrast: (
+    50: rgba(white, 0.87),
+    100: rgba(white, 0.87),
+    200: rgba(white, 0.87),
+    300: rgba(white, 0.87),
+    400: rgba(white, 0.87),
+  ),
 );
 @include mat-core();
 
-  $primary: mat-palette($indigo-palette,200);
-  $accent: mat-palette($indigo-palette,300);
-  $warn: mat-palette($indigo-palette, 400);
-  $theme: mat-light-theme($primary, $accent, $warn);
+$primary: mat-palette($indigo-palette, 200);
+$accent: mat-palette($indigo-palette, 300);
+$warn: mat-palette($indigo-palette, 400);
+$theme: mat-light-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);

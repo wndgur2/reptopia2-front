@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,12 +14,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatListModule} from '@angular/material/list';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { ShopComponent } from './components/shop/shop.component';
 import { BreedersComponent } from './components/breeders/breeders.component';
@@ -36,7 +37,6 @@ import { CreaturesComponent } from './components/breeders/creatures/creatures.co
 import { PostComponent } from './components/community/post/post.component';
 import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
 import { TipComponent } from './components/tip/tip.component';
-
 
 @NgModule({
   declarations: [
@@ -59,7 +59,7 @@ import { TipComponent } from './components/tip/tip.component';
     CreaturesComponent,
     PostComponent,
     ItemDetailComponent,
-    TipComponent
+    TipComponent,
   ],
   imports: [
     BrowserModule,
@@ -77,8 +77,9 @@ import { TipComponent } from './components/tip/tip.component';
     MatDividerModule,
     MatListModule,
     MatPaginatorModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

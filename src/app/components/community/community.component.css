@@ -1,44 +1,55 @@
-.container{
+.container {
   padding: 20%;
   padding-top: 0%;
   background: linear-gradient(0deg, white 82%, #eeeef4 100%);
 }
 
-.board{
+.board {
   padding-top: 1%;
   height: 30rem;
+  overflow-y: hidden;
 }
 
-.post{
+.post {
   display: flex;
   font-size: 16px;
   line-height: 28px;
 }
 
-.title{
+.title {
   display: inline-block;
   width: 70%;
 }
 
-.columns{
+.columns {
   display: flex;
   color: #212121a0;
   font-size: 15px;
 }
 
-.right{
+.right {
   width: 30%;
   display: flex;
   justify-content: space-between;
 }
 
-.titleCol{
+.titleCol {
   display: inline-block;
   width: 70%;
 }
 
-.meta{
+.meta {
   display: block;
   width: 33%;
   text-align: end;
+}
+
+#writeWrapper{
+  display: flex;
+  justify-content: end;
+}
+
+#write{
+  align-self: flex-end;
+  border-radius: 0px;
 }

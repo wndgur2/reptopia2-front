@@ -1,44 +1,44 @@
-.header{
+.header {
   display: flex;
   width: 100%;
 }
 
-.container{
+.container {
   padding: 20%;
   padding-top: 0%;
   background-color: #eeeef4;
 }
 
-.categories{
+.categories {
   background-color: white;
   display: flex;
   justify-content: space-between;
   margin-bottom: 6%;
 }
 
-.category{
+.category {
   width: 25%;
-  font-weight:lighter;
+  font-weight: lighter;
   text-decoration: none;
-  padding-top:2%;
-  padding-bottom:2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   text-align: center;
-  color:black;
+  color: black;
   transition: font-size 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 .active {
   font-size: 17px;
-  background-color: #2b8a16;
+  background-color: #252525;
   color: white;
 }
 
-.category:not(.active){
+.category:not(.active) {
   font-size: 16px;
   color: black;
 }
 
-.category:hover:not(.active){
-  background-color: #2fff0030;
+.category:hover:not(.active) {
+  background-color: #eaeaf0;
   font-size: 17px;
 }

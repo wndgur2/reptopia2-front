@@ -1,10 +1,37 @@
 <app-tip></app-tip>
 <div class="container">
   <div class="categories" [class.mat-elevation-z1]="true">
-    <a class="category" [routerLink]="['/community/posts', 'announcement']" routerLinkActive="active" ariaCurrentWhenActive="page">공지</a>
-    <a class="category" [routerLink]="['/community/posts', 'best']" routerLinkActive="active" ariaCurrentWhenActive="page">인기</a>
-    <a class="category" [routerLink]="['/community/posts', 'whatever']" routerLinkActive="active" ariaCurrentWhenActive="page">최근</a>
-    <a class="category" [routerLink]="['/community/posts', 'my']" routerLinkActive="active" ariaCurrentWhenActive="page">내 글</a>
+    <a
+      class="category"
+      [routerLink]="['/community/posts', 'announcement']"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page">
+      공지
+    </a>
+    <a
+      class="category"
+      [routerLink]="['/community/posts', 'best']"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page">
+      인기
+    </a>
+    <a
+      class="category"
+      [routerLink]="['/community/posts', 'whatever']"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page">
+      최근
+    </a>
+    <a
+      class="category"
+      [routerLink]="['/community/posts', 'my']"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page">
+      내 글
+    </a>
   </div>
   <router-outlet></router-outlet>
+  <div id="writeWrapper">
+    <button mat-raised-button id="write" color="primary">글쓰기</button>
+  </div>
 </div>
