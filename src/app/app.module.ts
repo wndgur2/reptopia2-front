@@ -37,6 +37,7 @@ import { CreaturesComponent } from './components/breeders/creatures/creatures.co
 import { PostComponent } from './components/community/post/post.component';
 import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
 import { TipComponent } from './components/tip/tip.component';
+import { CreatePostComponent } from './components/community/create-post/create-post.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { TipComponent } from './components/tip/tip.component';
     PostComponent,
     ItemDetailComponent,
     TipComponent,
+    CreatePostComponent,
   ],
   imports: [
     BrowserModule,

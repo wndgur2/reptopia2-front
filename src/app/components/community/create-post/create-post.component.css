@@ -1,0 +1,54 @@
+.container{
+  padding: 20%;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  background-color: #eeeef4;
+}
+
+form{
+  background-color: #f3f3fa;
+  padding: 7%;
+}
+
+mat-label{
+  font-size: 16px;
+}
+
+#titleInputText{
+  font-size: 20px;
+  padding-top: 1%;
+}
+
+#titleInput{
+  width: 100%;
+}
+
+#contentInput{
+  width: 100%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+#contentInputText{
+  font-size: 16px;
+  padding-top: 1%;
+}
+
+#submitWrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit{
+  width: 100%;
+  border: none;
+  border-radius: 0px;
+
+  padding: 5%;
+  padding-top: 1.2%;
+  padding-bottom: 1.2%;
+
+  font-size: 15px;
+  letter-spacing: 3px;
+}

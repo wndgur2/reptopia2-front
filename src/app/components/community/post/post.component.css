@@ -20,6 +20,7 @@
 }
 
 #content{
+  width: 100%;
   padding-top: 5%;
   padding-bottom: 5%;
   line-height: 26px;
@@ -32,7 +33,7 @@
 }
 
 #commentInput{
-  width: 100%;
+  width: 90%;
   margin: 1%;
 }
 
@@ -46,11 +47,9 @@
   margin-top: 3%;
   border-radius: 0px;
   border: none;
-  width: 10%;
-  background-color: #fefeff;
-  color: #1e5a11;
   letter-spacing: 3px;
-  font-size: 13px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 #comments{

@@ -16,6 +16,7 @@ import { PostComponent } from './components/community/post/post.component';
 import { PostsComponent } from './components/community/posts/posts.component';
 import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
 import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
+import { CreatePostComponent } from './components/community/create-post/create-post.component';
 
 
 const routes: Routes = [
@@ -54,6 +55,7 @@ const routes: Routes = [
     { path: 'posts/:boardType', component: PostsComponent },
     { path: 'posts/:boardType/post/:postId', component: PostComponent },
   ] },
+  { path: 'createPost', component: CreatePostComponent },
   { path: 'user', component: UserComponent },
 ];
 

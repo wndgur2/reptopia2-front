@@ -1,0 +1,16 @@
+<app-tip></app-tip>
+<div class="container">
+  <form [class.mat-elevation-z1]="true" >
+    <mat-form-field id="titleInput" appearance="legacy" color="primary">
+      <mat-label>제목</mat-label>
+      <textarea [cdkTextareaAutosize]="true" id="titleInputText" matInput></textarea>
+    </mat-form-field>
+    <mat-form-field id="contentInput" appearance="legacy" color="primary">
+      <mat-label>내용</mat-label>
+      <textarea [rows]="15" [cdkTextareaAutosize]="true" id="contentInputText" matInput ></textarea>
+    </mat-form-field>
+    <div id="submitWrapper">
+      <button class="submit" mat-flat-button type="submit" color="primary">등록</button>
+    </div>
+  </form>
+</div>
