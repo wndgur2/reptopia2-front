@@ -49,6 +49,8 @@ canvas{
   padding: 2%;
   max-height: 40%;
   overflow-y:scroll;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bold;
 }
 
 ::-webkit-scrollbar{
@@ -57,12 +59,13 @@ canvas{
 
 .adopt{
   width:100%;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
   border-radius: 0px;
   font-family: 'Nanum Myeongjo', serif;
+  letter-spacing: 2px;
 }
 
 .propWrapper{
