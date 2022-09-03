@@ -6,15 +6,34 @@
     <form>
       <mat-form-field appearance="legacy" color="primary">
         <mat-label>아이디</mat-label>
-        <input matInput placeholder="welcome@to.reptopia" />
+        <input
+          matInput
+          name="id"
+          type="text"
+          ngModel
+          required
+          placeholder="welcome@to.reptopia"
+        />
       </mat-form-field>
       <mat-form-field appearance="legacy" color="primary">
         <mat-label>암호</mat-label>
-        <input matInput type="password" />
+        <input
+          matInput
+          name="pw"
+          type="password"
+          ngModel
+          required
+        />
       </mat-form-field>
       <mat-form-field appearance="legacy" color="primary">
         <mat-label>암호 확인</mat-label>
-        <input matInput type="password" />
+        <input
+          matInput
+          name="pwCheck"
+          type="password"
+          ngModel
+          required
+        />
       </mat-form-field>
       <button mat-flat-button color="primary">생성</button>
       <a routerLink="/login">계정이 있나요?</a>

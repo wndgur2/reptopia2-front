@@ -7,7 +7,7 @@ $indigo-palette: (
   400: #252525,
   500: #252525,
   600: #252525,
-  700: #252525,
+  700: #f37676,
   contrast: (
     50: rgba(white, 0.87),
     100: rgba(white, 0.87),
@@ -20,7 +20,7 @@ $indigo-palette: (
 
 $primary: mat-palette($indigo-palette, 200);
 $accent: mat-palette($indigo-palette, 300);
-$warn: mat-palette($indigo-palette, 400);
+$warn: mat-palette($indigo-palette, 700);
 $theme: mat-light-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);

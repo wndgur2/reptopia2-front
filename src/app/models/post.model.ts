@@ -6,4 +6,5 @@ export interface Post{
   likes: number;
   views: number;
   commentIds: number[];
+  date: string;
 }

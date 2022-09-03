@@ -4,11 +4,23 @@
     <form>
       <mat-form-field appearance="legacy" color="primary">
         <mat-label>아이디</mat-label>
-        <input matInput placeholder="welcome@to.reptopia" />
+        <input matInput
+        type="text"
+        name="id"
+        ngModel
+        required
+        placeholder="welcome@to.reptopia"
+        />
       </mat-form-field>
       <mat-form-field appearance="legacy" color="primary">
         <mat-label>암호</mat-label>
-        <input matInput type="password" />
+        <input
+        matInput
+        type="password"
+        name="pw"
+        ngModel
+        required
+        />
       </mat-form-field>
       <button routerLink="/home/all" mat-flat-button color="primary">
         입장
