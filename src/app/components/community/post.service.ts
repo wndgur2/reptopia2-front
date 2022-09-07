@@ -39,7 +39,8 @@ export class PostsService {
   }
 
   addPost(title: string, content: string) {
-    const post: Post = { id: 0, title: title, content: content, authorId: 0, likes: 0, views:0, commentIds: [], date: new Date().getTime().toString() };
+    const now = new Date();
+    const post: Post = { id: now.getTime(), title: title, content: content, authorId: 1, likes: 2, views:3, commentIds: [], date: now.toLocaleString()};
     this.http
       .post<{ message: string }>("http://localhost:3000/api/posts", post)
       .subscribe(responseData => {

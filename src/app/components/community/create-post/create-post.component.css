@@ -1,12 +1,4 @@
-.container{
-  padding: 20%;
-  padding-top: 0%;
-  padding-bottom: 5%;
-  background-color: #eeeef4;
-}
-
 form{
-  background-color: #f3f3fa;
   padding: 7%;
 }
 
@@ -25,7 +17,7 @@ mat-label{
 
 #contentInput{
   width: 100%;
-  margin-top: 8%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 

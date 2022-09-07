@@ -53,7 +53,7 @@ const routes: Routes = [
     { path: 'posts/:boardType', component: PostsComponent },
     { path: 'posts/:boardType/post/:postId', component: PostComponent },
   ] },
-  { path: 'createPost', component: CreatePostComponent },
+  { path: 'community/createPost', component: CreatePostComponent },
   { path: 'user', component: UserComponent },
 ];
 
