@@ -1,15 +1,15 @@
 <app-tip></app-tip>
 <div class="container">
-  <form [class.mat-elevation-z1]="true" (submit)="onAddPost(postForm)" #postForm="ngForm">
+  <form [class.mat-elevation-z1]="true" (submit)="onSavePost(postForm)" #postForm="ngForm" *ngIf="!isLoading">
     <mat-form-field id="titleInput" appearance="legacy" color="primary">
       <input matInput
       id="titleInputText"
-      name="title"
       type="text"
-      ngModel
-      #title = "ngModel"
-      placeholder="제목"
+      name="title"
+      [ngModel] = "post.title"
       required
+      placeholder="제목"
+      #title = "ngModel"
       >
     </mat-form-field>
     <mat-form-field id="contentInput" appearance="legacy" color="primary">
@@ -17,12 +17,12 @@
       [rows]="15"
       [cdkTextareaAutosize]="true"
       id="contentInputText"
-      name="content"
       type="text"
-      ngModel
-      #content = "ngModel"
-      placeholder="내용"
+      name="content"
+      [ngModel] = "post.content"
       required
+      placeholder="내용"
+      #content = "ngModel"
       ></textarea>
     </mat-form-field>
     <div id="submitWrapper">

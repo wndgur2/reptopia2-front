@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { Post } from 'src/app/models/post.model';
 import { PostsService } from '../post.service';
 
 @Component({
@@ -9,16 +11,51 @@ import { PostsService } from '../post.service';
   styleUrls: ['./create-post.component.css', '../community.component.css']
 })
 export class CreatePostComponent implements OnInit {
+  enteredTitle = "";
+  enteredContent = "";
+  post: Post;
+  isLoading = false;
+  private mode = "create";
+  private postId: string;
+  private postSub: Subscription;
 
-  constructor(public postsService: PostsService, private router: Router) { }
+  constructor(
+    public postsService: PostsService,
+    public route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe((paramMap: ParamMap) => {
+      if (paramMap.has("postId")) {
+        this.mode = "edit";
+        this.postId = paramMap.get("postId")!;
+        this.isLoading = true;
+        this.postsService.getPost(this.postId);
+        this.postSub = this.postsService.getPostUpdateListener()
+        .subscribe((postData:Post) => {
+          this.isLoading = false;
+          this.post = postData;
+        });
+      } else {
+        this.mode = "create";
+        this.postId = "";
+      }
+    });
   }
-  onAddPost(form: NgForm){
+
+  onSavePost(form: NgForm) {
     if (form.invalid) {
       return;
     }
-    this.postsService.addPost(form.value.title, form.value.content);
-    this.router.navigate(['/community']);
+    this.isLoading = true;
+    if (this.mode === "create") {
+      this.postsService.addPost("user", form.value.title, form.value.content);
+    } else {
+      var newPost = {...this.post};
+      newPost.title = form.value.title;
+      newPost.content = form.value.content;
+      this.postsService.updatePost(newPost);
+    }
+    form.resetForm();
   }
 }

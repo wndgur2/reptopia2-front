@@ -1,18 +1,50 @@
+button{
+  border-radius: 0px;
+}
 #container{
   padding: 2%;
 }
 
 #title{
-  padding:1%;
-  padding-bottom: 3%;
   margin: 0px;
 }
 
-.meta{
-  padding-top: 3%;
-  font-size: 14px;
+#top{
+  padding-bottom: 1%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  vertical-align: bottom;
+}
+
+.meta{
+  font-size: 13px;
+  padding-top: 3%;
+  display: flex;
+  justify-content: end;
+}
+
+#buttons{
+  width: 15%;
+  height: 50%;
+  display: flex;
+  justify-content: end;
+  font-size: 15px;
+  align-items: center;
+  align-content: center;
+}
+
+.topButton:hover{
+  background-color: #eeeeee;
+  align-self: center;
+}
+
+.topButton{
+  font-size: 14px;
+  padding: 10%;
+  margin: 3%;
+  background:none;
+  border: none;
+  cursor: pointer;
 }
 
 .item{
@@ -21,6 +53,7 @@
 
 #content{
   width: 100%;
+  min-height: 10rem;
   padding-top: 5%;
   padding-bottom: 5%;
   line-height: 26px;

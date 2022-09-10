@@ -1,12 +1,12 @@
 <div class="container">
   <mat-card>
     <span id="inform"> Reptopia에 오셨네요? <br />행운을 빌게요.</span>
-    <form>
+    <form (submit)="onLogIn(logInForm)" #logInForm="ngForm">
       <mat-form-field appearance="legacy" color="primary">
         <mat-label>아이디</mat-label>
         <input matInput
-        type="text"
-        name="id"
+        type="email"
+        name="email"
         ngModel
         required
         placeholder="welcome@to.reptopia"
@@ -17,12 +17,12 @@
         <input
         matInput
         type="password"
-        name="pw"
+        name="password"
         ngModel
         required
         />
       </mat-form-field>
-      <button routerLink="/home/all" mat-flat-button color="primary">
+      <button type="submit" mat-flat-button color="primary">
         입장
       </button>
       <a routerLink="/signup">... 계정이 없나요?</a>

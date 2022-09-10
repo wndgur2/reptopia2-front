@@ -8,8 +8,7 @@ import { CagesComponent } from './components/shop/cages/cages.component';
 import { FoodsComponent } from './components/shop/foods/foods.component';
 import { MaterialsComponent } from './components/shop/materials/materials.component';
 import { TemperaturesComponent } from './components/shop/temperatures/temperatures.component';
-import { LoginComponent } from './components/login/login.component';
-import { SignupComponent } from './components/signup/signup.component';
+import { LoginComponent } from './components/auth/login/login.component';
 import { CommunityComponent } from './components/community/community.component';
 import { CageComponent } from './components/home/cage/cage.component';
 import { PostComponent } from './components/community/post/post.component';
@@ -17,6 +16,7 @@ import { PostsComponent } from './components/community/posts/posts.component';
 import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
 import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
 import { CreatePostComponent } from './components/community/create-post/create-post.component';
+import { SignupComponent } from './components/auth/signup/signup.component';
 
 
 const routes: Routes = [
@@ -54,6 +54,7 @@ const routes: Routes = [
     { path: 'posts/:boardType/post/:postId', component: PostComponent },
   ] },
   { path: 'community/createPost', component: CreatePostComponent },
+  { path: 'community/editPost/:postId', component: CreatePostComponent},
   { path: 'user', component: UserComponent },
 ];
 

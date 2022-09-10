@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Post } from 'src/app/models/post.model';
 import { PostsService } from '../post.service';
@@ -11,11 +11,10 @@ import { PostsService } from '../post.service';
 })
 export class PostComponent implements OnInit, OnDestroy {
 
-  posts: Post[] = [];
-  private postsSub: Subscription;
+
   post: Post ={
-    id: 0,
-    authorId: 0,
+    id: "",
+    authorId: "",
     title: '',
     content: '',
     likes: 0,
@@ -23,19 +22,30 @@ export class PostComponent implements OnInit, OnDestroy {
     commentIds: [],
     date: ''
   };
+  private postId:string;
+  private postSub: Subscription;
 
-  constructor(public postsService: PostsService, private router:Router) {}
+  constructor(public postsService: PostsService, private route: ActivatedRoute, private router:Router) {}
 
   ngOnInit() {
-    this.postsService.getPosts();
-    this.postsSub = this.postsService.getPostUpdateListener()
-      .subscribe((posts: Post[]) => {
-        this.posts = posts;
-        this.post = this.postsService.getPost(parseInt(this.router.url.split('/')[5]));
+    this.route.paramMap.subscribe((paramMap: ParamMap) => {
+      this.postId = paramMap.get("postId")!;
+      console.log(this.postId);
+      this.postsService.getPost(this.postId);
+      this.postSub = this.postsService.getPostUpdateListener()
+        .subscribe((postData:Post) => {
+        this.post = postData;
       });
+    });
   }
 
   ngOnDestroy() {
-    this.postsSub.unsubscribe();
+    this.postSub.unsubscribe();
+  }
+
+  onDeletePost(id:string){
+    console.log("deleting " + id);
+    this.postsService.deletePost(id);
+    this.router.navigate(['/community']);
   }
 }
