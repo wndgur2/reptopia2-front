@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  isPhone = false;
 
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+    window.innerWidth < 800 ? this.isPhone = true : this.isPhone = false;
   }
-
 }

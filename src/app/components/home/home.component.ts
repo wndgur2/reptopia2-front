@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { getHeightCol } from '../shop/consts';
 
 export interface Tile {
   id: number;
@@ -13,7 +14,7 @@ export interface Tile {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', '../../app.component.css']
 })
-export class HomeComponent{
+export class HomeComponent implements OnInit{
   tiles: Tile[] = [
     {id: 0,text: '도돌이, 양이', cols: 1, rows: 1, color: 'lightblue'},
     {id: 1,text: 'Two', cols: 1, rows: 1, color: 'lightgreen'},
@@ -32,4 +33,10 @@ export class HomeComponent{
     {id: 14,text: 'Three', cols: 2, rows: 2, color: 'lightpink'},
     {id: 15,text: 'Four', cols: 1, rows: 1, color: '#DDBDF1'},
   ];
+
+  rowHeight = window.innerHeight/2 - 40;
+  isPhone = window.innerWidth < 800;
+
+  ngOnInit(){
+  }
 }

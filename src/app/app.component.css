@@ -1,12 +1,23 @@
+.container{
+  transition: padding 0.1s ease-in-out, margin 0.1s ease-in-out;
+}
+
+@media (min-width: 1100px){
+  .container {
+    padding: 20%;
+    padding-top: 0%;
+  }
+}
+
 .header {
   display: flex;
   width: 100%;
 }
 
-.container {
-  padding: 20%;
-  padding-top: 0%;
+#background{
+  padding-top: 2.5%;
   background-color: #eeeef4;
+  min-height: 50rem;
 }
 
 .categories {
@@ -41,4 +52,16 @@
 .category:hover:not(.active) {
   background-color: #eaeaf0;
   font-size: 17px;
+}
+
+@media (max-width:768px){
+  .category:not(.active){
+    font-size: 14px;
+  }
+  .category:hover:not(.active){
+    font-size: 15px;
+  }
+  .active{
+    font-size: 15px;
+  }
 }

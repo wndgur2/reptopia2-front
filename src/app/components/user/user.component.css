@@ -1,8 +1,12 @@
-#container{
+.container{
   height: 10rem;
-  padding: 32%;
-  padding-top: 10%;
-  background-color: #eeeef4;
+  padding: 10% 20%;
+}
+
+@media (max-width: 992px){
+  .container{
+    padding: 5%;
+  }
 }
 
 mat-card{

@@ -15,7 +15,8 @@
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
     >
-      레오파드 게코
+    <span *ngIf="isPhone">레오</span>
+    <span *ngIf="!isPhone">레오파드 게코</span>
     </a>
     <a
       class="category"
@@ -23,7 +24,8 @@
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
     >
-      크레스티드 게코
+    <span *ngIf="isPhone">크레</span>
+    <span *ngIf="!isPhone">크레스티드 게코</span>
     </a>
     <a
       class="category"
@@ -31,10 +33,11 @@
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
     >
-      볼 파이톤
+      <span *ngIf="isPhone">볼파</span>
+      <span *ngIf="!isPhone">볼 파이톤</span>
     </a>
   </div>
-  <mat-grid-list cols="2" rowHeight="455px">
+  <mat-grid-list cols="2" [rowHeight]="rowHeight">
     <mat-grid-tile
       *ngFor="let tile of tiles"
       [colspan]="tile.cols"

@@ -12,3 +12,9 @@ canvas{
   width: 100%;
   margin-bottom: 2%;
 }
+
+@media (max-width: 768px){
+  span{
+    font-size: 13px;
+  }
+}

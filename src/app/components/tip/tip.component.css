@@ -1,3 +1,6 @@
+::-webkit-scrollbar{
+  display: none;
+}
 #tip{
   display: block;
   text-align: center;
@@ -5,7 +8,14 @@
   font-size: 16px;
   font-family: 'Nanum myeongjo', sans-serif;
   background-color: #eeeef4;
-  padding: 2.5%;
+  margin: 2.5% 10%;
+  margin-top: 0%;
   color: #212121;
-  letter-spacing: 1.8px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+@media (max-width:768px){
+  #tip{
+    font-size: 14px;
+  }
 }

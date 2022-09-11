@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./breeders.component.css', '../../app.component.css']
 })
 export class BreedersComponent implements OnInit {
+  isPhone = window.innerWidth < 1200;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -8,7 +8,7 @@ import { getHeightCol } from '../consts';
 })
 export class CagesComponent implements OnInit {
 
-  sizes = getHeightCol(40, 25);
+  sizes = getHeightCol(35, 25);
   rowHeight = this.sizes[0];
   colSize = this.sizes[1];
 
