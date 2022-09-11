@@ -29,7 +29,7 @@ export class PostsService {
         views: number,
         date: string
        }>(
-        "http://localhost:3000/api/posts/"+id
+        "https://reptopia-server.herokuapp.com/api/posts/"+id
       )
       .subscribe((transformedPost) => {
         this.post = {
@@ -48,7 +48,7 @@ export class PostsService {
 
   getPosts() {
     this.http
-      .get<{ message: string; posts: any }>("http://localhost:3000/api/posts")
+      .get<{ message: string; posts: any }>("https://reptopia-server.herokuapp.com/api/posts")
       .pipe(
         map(postData => {
           return postData.posts.map((post:any) => {
@@ -83,7 +83,7 @@ export class PostsService {
     const post: Post = { id: "zxc", title: title, content: content, authorId: authorId, likes: 0, views:0, commentIds: [], date: now.toLocaleString()};
     this.http
       .post<{ message: string; postId: string }>(
-        "http://localhost:3000/api/posts",
+        "https://reptopia-server.herokuapp.com/api/posts",
         post
       )
       .subscribe(responseData => {
@@ -97,7 +97,7 @@ export class PostsService {
 
   updatePost(post:Post) {
     this.http
-      .put("http://localhost:3000/api/posts/" + post.id, post)
+      .put("https://reptopia-server.herokuapp.com/api/posts/" + post.id, post)
       .subscribe(response => {
         const updatedPosts = [...this.posts];
         const oldPostIndex = updatedPosts.findIndex(p => p.id === post.id);
@@ -110,7 +110,7 @@ export class PostsService {
 
   deletePost(postId: string) {
     this.http
-      .delete("http://localhost:3000/api/posts/" + postId)
+      .delete("https://reptopia-server.herokuapp.com/api/posts/" + postId)
       .subscribe(() => {
         const updatedPosts = this.posts.filter(post => post.id !== postId);
         this.posts = updatedPosts;
