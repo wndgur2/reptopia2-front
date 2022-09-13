@@ -1,17 +1,17 @@
 <mat-toolbar id="toolbarContainer" color="primary">
   <div id="toolbar">
     <a id="title" routerLink="/home/all">
-      <img src="../../../assets/images/logo.png" height="36px" />
+      <img id="logo" src="../../../assets/images/logo.png" />
       <span id="titleText">Reptopia</span>
     </a>
-    <a class="menu" routerLink="/community">대화</a>
+    <a class="menu" routerLink="/community">토론</a>
     <a class="menu" routerLink="/shop">상점</a>
     <a class="menu" routerLink="/breeders">분양</a>
     <div id="meOut">
       <div id="meIn">
         <span class="meta" *ngIf="!isPhone">10000 R</span>
-        <span class="meta" *ngIf="!isPhone">숙련도 1</span>
-        <a id="id" class="menu" routerLink="/user">wndgur2</a>
+        <span class="meta" *ngIf="!isPhone">숙련자</span>
+        <a id="id" class="menu" routerLink="/user">{{isPhone?"나":"wndgur2"}}</a>
       </div>
     </div>
   </div>

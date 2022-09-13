@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { getHeightCol } from '../shop/consts';
 
 export interface Tile {
   id: number;
@@ -34,7 +33,7 @@ export class HomeComponent implements OnInit{
     {id: 15,text: 'Four', cols: 1, rows: 1, color: '#DDBDF1'},
   ];
 
-  rowHeight = window.innerHeight/2 - 40;
+  rowHeight = (window.innerWidth/10 + window.innerHeight/4);
   isPhone = window.innerWidth < 800;
 
   ngOnInit(){

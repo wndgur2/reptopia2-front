@@ -2,8 +2,8 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: calc(100% - 30px);
-  width: calc(100% - 5px);
+  height: calc(99.9% - 5px);
+  width: calc(99.9% - 5px);
   align-self: flex-start;
 }
 

@@ -25,13 +25,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { ShopComponent } from './components/shop/shop.component';
 import { BreedersComponent } from './components/breeders/breeders.component';
 import { UserComponent } from './components/user/user.component';
-import { CagesComponent } from './components/shop/cages/cages.component';
-import { FoodsComponent } from './components/shop/foods/foods.component';
-import { TemperaturesComponent } from './components/shop/temperatures/temperatures.component';
-import { MaterialsComponent } from './components/shop/materials/materials.component';
+import { ItemsComponent } from './components/shop/items/items.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { CommunityComponent } from './components/community/community.component';
-import { CageComponent } from './components/home/cage/cage.component';
 import { PostsComponent } from './components/community/posts/posts.component';
 import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
 import { PostComponent } from './components/community/post/post.component';
@@ -48,21 +44,16 @@ import { SignupComponent } from './components/auth/signup/signup.component';
     ShopComponent,
     BreedersComponent,
     UserComponent,
-    CagesComponent,
-    FoodsComponent,
-    TemperaturesComponent,
-    MaterialsComponent,
-    TemperaturesComponent,
     LoginComponent,
     SignupComponent,
     CommunityComponent,
-    CageComponent,
     PostsComponent,
     CreaturesComponent,
     PostComponent,
     ItemDetailComponent,
     TipComponent,
     CreatePostComponent,
+    ItemsComponent
   ],
   imports: [
     BrowserModule,

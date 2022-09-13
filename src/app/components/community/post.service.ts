@@ -5,6 +5,7 @@ import { map } from "rxjs/operators";
 
 import { Post } from "../../models/post.model";
 import { Router } from "@angular/router";
+import serverUrl from "../../consts";
 
 @Injectable({ providedIn: "root" })
 export class PostsService {
@@ -29,7 +30,7 @@ export class PostsService {
         views: number,
         date: string
        }>(
-        "https://reptopia-server.herokuapp.com/api/posts/"+id
+        serverUrl + "/api/posts/"+id
       )
       .subscribe((transformedPost) => {
         this.post = {
@@ -48,7 +49,7 @@ export class PostsService {
 
   getPosts() {
     this.http
-      .get<{ message: string; posts: any }>("https://reptopia-server.herokuapp.com/api/posts")
+      .get<{ message: string; posts: any }>(serverUrl + "/api/posts")
       .pipe(
         map(postData => {
           return postData.posts.map((post:any) => {
@@ -80,10 +81,10 @@ export class PostsService {
 
   addPost(authorId: string, title: string, content: string) {
     const now = new Date();
-    const post: Post = { id: "zxc", title: title, content: content, authorId: authorId, likes: 0, views:0, commentIds: [], date: now.toLocaleString()};
+    const post: Post = { id: "zxc", title: title, content: content, authorId: authorId, likes: 0, views:0, commentIds: [], date: trimDate(now)};
     this.http
       .post<{ message: string; postId: string }>(
-        "https://reptopia-server.herokuapp.com/api/posts",
+        serverUrl + "/api/posts",
         post
       )
       .subscribe(responseData => {
@@ -97,7 +98,7 @@ export class PostsService {
 
   updatePost(post:Post) {
     this.http
-      .put("https://reptopia-server.herokuapp.com/api/posts/" + post.id, post)
+      .put(serverUrl + "/api/posts/" + post.id, post)
       .subscribe(response => {
         const updatedPosts = [...this.posts];
         const oldPostIndex = updatedPosts.findIndex(p => p.id === post.id);
@@ -110,11 +111,25 @@ export class PostsService {
 
   deletePost(postId: string) {
     this.http
-      .delete("https://reptopia-server.herokuapp.com/api/posts/" + postId)
+      .delete(serverUrl + "/api/posts/" + postId)
       .subscribe(() => {
         const updatedPosts = this.posts.filter(post => post.id !== postId);
         this.posts = updatedPosts;
         this.postsUpdated.next([...this.posts]);
       });
     }
+}
+
+const trimDate = (now : Date)=>{
+  // 9/8/2022, 10:32:51 PM
+  // 9/8, 10:32
+  let res = "";
+  res += now.getMonth().toString();
+  res += "/";
+  res += now.getDate().toString();
+  res += " ";
+  res += now.getHours().toString();
+  res += ":";
+  res += now.getMinutes().toString();
+  return res;
 }

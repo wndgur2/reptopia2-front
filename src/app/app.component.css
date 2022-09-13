@@ -2,7 +2,7 @@
   transition: padding 0.1s ease-in-out, margin 0.1s ease-in-out;
 }
 
-@media (min-width: 1100px){
+@media (min-width: 1200px){
   .container {
     padding: 20%;
     padding-top: 0%;
@@ -15,24 +15,20 @@
 }
 
 #background{
-  padding-top: 2.5%;
   background-color: #eeeef4;
   min-height: 50rem;
 }
 
 .categories {
   background-color: white;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 6%;
+  margin-bottom: calc(5% + 10px);
 }
 
 .category {
-  width: 25%;
   font-weight: lighter;
   text-decoration: none;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: calc(1% + 10px);
+  padding-bottom: calc(1% + 10px);
   text-align: center;
   color: black;
   transition: font-size 0.15s ease-in-out, background-color 0.15s ease-in-out;

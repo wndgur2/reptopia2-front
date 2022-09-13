@@ -30,7 +30,6 @@ export class PostComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.route.paramMap.subscribe((paramMap: ParamMap) => {
       this.postId = paramMap.get("postId")!;
-      console.log(this.postId);
       this.postsService.getPost(this.postId);
       this.postSub = this.postsService.getPostUpdateListener()
         .subscribe((postData:Post) => {
@@ -44,7 +43,6 @@ export class PostComponent implements OnInit, OnDestroy {
   }
 
   onDeletePost(id:string){
-    console.log("deleting " + id);
     this.postsService.deletePost(id);
     this.router.navigate(['/community']);
   }

@@ -1,6 +1,6 @@
 <div id="container">
   <div id="top">
-    <h1 id="title">{{post.title}}</h1>
+    <h2>{{post.title}}</h2>
     <div id="buttons">
       <button class="topButton" color="primary" [routerLink]="['/community/editPost', post.id]">수정</button>
       <button class="topButton" color="primary" (click)="onDeletePost(post.id)">삭제</button>

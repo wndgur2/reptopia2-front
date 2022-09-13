@@ -1,8 +1,8 @@
 <app-tip></app-tip>
 <div class="container">
-  <div class="categories" [class.mat-elevation-z1]="true">
+  <div class="row justify-content-md-center categories" [class.mat-elevation-z1]="true">
     <a
-      class="category"
+      class="col-6 col-lg-3 category"
       [routerLink]="['/home', 'all']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
@@ -10,7 +10,7 @@
       모두
     </a>
     <a
-      class="category"
+      class="col-6 col-lg-3 category"
       [routerLink]="['/home', 'leopard']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
@@ -19,7 +19,7 @@
     <span *ngIf="!isPhone">레오파드 게코</span>
     </a>
     <a
-      class="category"
+      class="col-6 col-lg-3 category"
       [routerLink]="['/home', 'crested']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
@@ -28,7 +28,7 @@
     <span *ngIf="!isPhone">크레스티드 게코</span>
     </a>
     <a
-      class="category"
+      class="col-6 col-lg-3 category"
       [routerLink]="['/home', 'ball']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page"

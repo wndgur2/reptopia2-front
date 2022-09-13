@@ -27,6 +27,7 @@ export class CreatePostComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((paramMap: ParamMap) => {
       if (paramMap.has("postId")) {
+        console.log("edit mode");
         this.mode = "edit";
         this.postId = paramMap.get("postId")!;
         this.isLoading = true;

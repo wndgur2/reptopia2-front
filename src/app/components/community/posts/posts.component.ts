@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
-  styleUrls: ['../community.component.css', './posts.component.css', '../../../app.component.css']
+  styleUrls: [ '../../../app.component.css', './posts.component.css', '../community.component.css']
 })
 export class PostsComponent implements OnInit, OnDestroy {
 

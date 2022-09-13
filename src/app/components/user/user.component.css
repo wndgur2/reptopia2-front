@@ -1,20 +1,13 @@
 .container{
-  height: 10rem;
-  padding: 10% 20%;
-}
-
-@media (max-width: 992px){
-  .container{
-    padding: 5%;
-  }
+  padding: 5% 20%;
 }
 
 mat-card{
   font-size: 16px;
   border-radius: 0px;
   margin: auto;
-  padding: 15%;
-  padding-bottom: 14%;
+  padding: 10%;
+  padding-bottom: 9%;
 }
 
 button{
@@ -25,15 +18,15 @@ button{
   font-family: 'Nanum Myeongjo', serif;
   display: block;
   font-size: 17px;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   line-height: 36px;
   letter-spacing: 3px;
   text-align: center;
 }
 
 .item{
-  padding-top: 7%;
-  padding-bottom: 1%;
+  padding-top: 4%;
+  padding-bottom: 3%;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
@@ -45,4 +38,27 @@ button{
   letter-spacing: 2px;
   width: 100%;
   margin-top:10%;
+}
+
+.prop{
+  font-size: 14px;
+}
+
+.data{
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .container{
+    padding: 3%;
+  }
+  #inform{
+    font-size: 15px;
+  }
+  .data{
+    font-size: 15px;
+  }
+  #logout{
+    padding: 1%;
+  }
 }

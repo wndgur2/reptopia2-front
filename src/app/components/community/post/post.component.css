@@ -1,13 +1,6 @@
 button{
   border-radius: 0px;
 }
-#container{
-  padding: 2%;
-}
-
-#title{
-  margin: 0px;
-}
 
 #top{
   padding-bottom: 1%;
@@ -20,28 +13,28 @@ button{
   font-size: 13px;
   padding-top: 3%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 #buttons{
-  width: 15%;
+  width: 35%;
   height: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   font-size: 15px;
   align-items: center;
   align-content: center;
 }
 
 .topButton:hover{
-  background-color: #eeeeee;
+  background-color: #e0e0e5;
   align-self: center;
 }
 
 .topButton{
   font-size: 14px;
-  padding: 10%;
-  margin: 3%;
+  padding: 10px 15px;
+  margin: 0.5%;
   background:none;
   border: none;
   cursor: pointer;

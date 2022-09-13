@@ -6,7 +6,7 @@
       id="titleInputText"
       type="text"
       name="title"
-      [ngModel] = "post.title"
+      [ngModel] = "post? post.title:''"
       required
       placeholder="제목"
       #title = "ngModel"
@@ -19,7 +19,7 @@
       id="contentInputText"
       type="text"
       name="content"
-      [ngModel] = "post.content"
+      [ngModel] = "post? post.content:''"
       required
       placeholder="내용"
       #content = "ngModel"

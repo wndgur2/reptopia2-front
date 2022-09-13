@@ -4,10 +4,7 @@ import { BreedersComponent } from './components/breeders/breeders.component';
 import { HomeComponent } from './components/home/home.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { UserComponent } from './components/user/user.component';
-import { CagesComponent } from './components/shop/cages/cages.component';
-import { FoodsComponent } from './components/shop/foods/foods.component';
-import { MaterialsComponent } from './components/shop/materials/materials.component';
-import { TemperaturesComponent } from './components/shop/temperatures/temperatures.component';
+import { ItemsComponent } from './components/shop/items/items.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { CommunityComponent } from './components/community/community.component';
 import { CageComponent } from './components/home/cage/cage.component';
@@ -34,10 +31,10 @@ const routes: Routes = [
 
   { path: 'shop', redirectTo: '/shop/cages', pathMatch: 'full' },
   { path: 'shop', component: ShopComponent, children: [
-    { path: 'cages', component: CagesComponent},
-    { path: 'foods', component: FoodsComponent},
-    { path: 'temperatures', component: TemperaturesComponent},
-    { path: 'materials', component: MaterialsComponent},
+    { path: 'cages', component: ItemsComponent},
+    { path: 'foods', component: ItemsComponent},
+    { path: 'materials', component: ItemsComponent},
+    { path: 'temperatures', component: ItemsComponent},
     { path: 'cages/itemDetail/:itemId', component: ItemDetailComponent },
     { path: 'foods/itemDetail/:itemId', component: ItemDetailComponent },
     { path: 'temperatures/itemDetail/:itemId', component: ItemDetailComponent },
