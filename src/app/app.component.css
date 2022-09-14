@@ -2,21 +2,9 @@
   transition: padding 0.1s ease-in-out, margin 0.1s ease-in-out;
 }
 
-@media (min-width: 1200px){
-  .container {
-    padding: 20%;
-    padding-top: 0%;
-  }
-}
-
 .header {
   display: flex;
   width: 100%;
-}
-
-#background{
-  background-color: #eeeef4;
-  min-height: 50rem;
 }
 
 .categories {
@@ -50,7 +38,16 @@
   font-size: 17px;
 }
 
+@media (min-width: 1200px){
+  .container {
+    padding: 0% 20%;
+  }
+}
+
 @media (max-width:768px){
+  .container {
+    padding: 0px;
+  }
   .category:not(.active){
     font-size: 14px;
   }

@@ -1,0 +1,18 @@
+p{
+  font-family: 'Nanum myeongjo', sans-serif;
+  text-align: center;
+}
+
+.container{
+  padding: 3rem 0px;
+}
+
+a{
+  color: #212121;
+}
+
+@media (max-width: 768px) {
+  .container{
+    padding: 2rem 0px;
+  }
+}

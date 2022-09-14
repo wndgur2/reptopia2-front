@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { BreedersComponent } from './components/breeders/breeders.component';
 import { HomeComponent } from './components/home/home.component';
 import { ShopComponent } from './components/shop/shop.component';
-import { UserComponent } from './components/user/user.component';
 import { ItemsComponent } from './components/shop/items/items.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { CommunityComponent } from './components/community/community.component';
@@ -14,6 +13,7 @@ import { CreaturesComponent } from './components/breeders/creatures/creatures.co
 import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
 import { CreatePostComponent } from './components/community/create-post/create-post.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
+import { UserComponent } from './components/auth/user/user.component';
 
 
 const routes: Routes = [

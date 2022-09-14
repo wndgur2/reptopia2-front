@@ -3,7 +3,7 @@ $indigo-palette: (
   50: #252525,
   100: #252525,
   200: #252525,
-  300: #252525,
+  300: #eeeef4,
   400: #252525,
   500: #252525,
   600: #252525,
@@ -12,14 +12,15 @@ $indigo-palette: (
     50: rgba(white, 0.87),
     100: rgba(white, 0.87),
     200: rgba(white, 0.87),
-    300: rgba(white, 0.87),
+    300: rgba(#252525, 0.87),
     400: rgba(white, 0.87),
   ),
 );
 @include mat-core();
 
 $primary: mat-palette($indigo-palette, 200);
-$accent: mat-palette($indigo-palette, 300);
+$light: mat-palette($indigo-palette, 300);
+$accent: mat-palette($indigo-palette, 400);
 $warn: mat-palette($indigo-palette, 700);
 $theme: mat-light-theme($primary, $accent, $warn);
 

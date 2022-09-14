@@ -24,7 +24,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { ShopComponent } from './components/shop/shop.component';
 import { BreedersComponent } from './components/breeders/breeders.component';
-import { UserComponent } from './components/user/user.component';
 import { ItemsComponent } from './components/shop/items/items.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { CommunityComponent } from './components/community/community.component';
@@ -35,6 +34,9 @@ import { ItemDetailComponent } from './components/shop/item-detail/item-detail.c
 import { TipComponent } from './components/tip/tip.component';
 import { CreatePostComponent } from './components/community/create-post/create-post.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CageComponent } from './components/home/cage/cage.component';
+import { UserComponent } from './components/auth/user/user.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { SignupComponent } from './components/auth/signup/signup.component';
     ItemDetailComponent,
     TipComponent,
     CreatePostComponent,
-    ItemsComponent
+    ItemsComponent,
+    FooterComponent,
+    CageComponent
   ],
   imports: [
     BrowserModule,

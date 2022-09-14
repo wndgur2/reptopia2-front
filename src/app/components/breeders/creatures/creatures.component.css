@@ -1,7 +1,7 @@
 .tile{
   background-color: white;
   display: flex;
-  margin-top: 10%;
+  margin-bottom: 3rem;
   height: 25rem;
   justify-content: space-between;
 }

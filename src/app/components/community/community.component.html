@@ -6,32 +6,32 @@
       [routerLink]="['/community/posts', 'announcement']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page">
-      공지
+      상식
     </a>
     <a
       class="col-6 col-lg-3 category"
       [routerLink]="['/community/posts', 'best']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page">
-      인기
+      뜨거운 글
     </a>
     <a
       class="col-6 col-lg-3 category"
       [routerLink]="['/community/posts', 'whatever']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page">
-      최근
+      따끈한 글
     </a>
     <a
       class="col-6 col-lg-3 category"
       [routerLink]="['/community/posts', 'my']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page">
-      내 글
+      돌아보기
     </a>
   </div>
   <router-outlet></router-outlet>
   <div id="writeWrapper">
-    <button routerLink="/community/createPost" mat-raised-button id="write" color="primary">글쓰기</button>
+    <button routerLink="/community/createPost" mat-raised-button id="write" color="primary">할 말 있어요.</button>
   </div>
 </div>
