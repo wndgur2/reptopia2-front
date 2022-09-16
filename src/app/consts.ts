@@ -1,2 +1,2 @@
-const serverUrl :string = "http://localhost:3000";
+const serverUrl :string = "https://reptopia-server.herokuapp.com";
 export default serverUrl;
