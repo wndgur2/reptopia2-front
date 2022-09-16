@@ -8,7 +8,7 @@ import { PostsService } from '../post.service';
 @Component({
   selector: 'app-create-post',
   templateUrl: './create-post.component.html',
-  styleUrls: ['./create-post.component.css', '../community.component.css']
+  styleUrls: ['../../../app.component.css', './create-post.component.css']
 })
 export class CreatePostComponent implements OnInit {
   enteredTitle = "";

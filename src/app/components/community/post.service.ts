@@ -11,10 +11,10 @@ import serverUrl from "../../consts";
 export class PostsService {
 
   private post: Post;
-  private postUpdated = new Subject<Post>();
+  private postUpdateListener = new Subject<Post>();
 
   private posts: Post[] = [];
-  private postsUpdated = new Subject<Post[]>();
+  private postsUpdateListener = new Subject<Post[]>();
 
   constructor(private http: HttpClient, private router : Router) {}
 
@@ -43,7 +43,7 @@ export class PostsService {
           views:transformedPost.views,
           date:transformedPost.date,
         }
-        this.postUpdated.next(this.post);
+        this.postUpdateListener.next(this.post);
       });
   }
 
@@ -66,16 +66,16 @@ export class PostsService {
       )
       .subscribe(transformedPosts => {
         this.posts = transformedPosts;
-        this.postsUpdated.next([...this.posts]);
+        this.postsUpdateListener.next([...this.posts]);
       });
   }
 
   getPostsUpdateListener() {
-    return this.postsUpdated.asObservable();
+    return this.postsUpdateListener.asObservable();
   }
 
   getPostUpdateListener() {
-    return this.postUpdated.asObservable();
+    return this.postUpdateListener.asObservable();
   }
 
 
@@ -91,7 +91,7 @@ export class PostsService {
         const id = responseData.postId;
         post.id = id;
         this.posts.push(post);
-        this.postsUpdated.next([...this.posts]);
+        this.postsUpdateListener.next([...this.posts]);
         this.router.navigate(["/community"]);
       });
   }
@@ -104,7 +104,7 @@ export class PostsService {
         const oldPostIndex = updatedPosts.findIndex(p => p.id === post.id);
         updatedPosts[oldPostIndex] = post;
         this.posts = updatedPosts;
-        this.postsUpdated.next([...this.posts]);
+        this.postsUpdateListener.next([...this.posts]);
         this.router.navigate(["/community"]);
       });
   }
@@ -115,7 +115,7 @@ export class PostsService {
       .subscribe(() => {
         const updatedPosts = this.posts.filter(post => post.id !== postId);
         this.posts = updatedPosts;
-        this.postsUpdated.next([...this.posts]);
+        this.postsUpdateListener.next([...this.posts]);
       });
     }
 }

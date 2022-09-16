@@ -14,6 +14,7 @@ import { ItemDetailComponent } from './components/shop/item-detail/item-detail.c
 import { CreatePostComponent } from './components/community/create-post/create-post.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
 import { UserComponent } from './components/auth/user/user.component';
+import { AuthGuard } from './components/auth/auth.guard';
 
 
 const routes: Routes = [
@@ -27,7 +28,7 @@ const routes: Routes = [
     {path: ':species', component: CreaturesComponent}
   ]},
 
-  { path: 'cage/:cageId', component: CageComponent },
+  { path: 'cage/:cageId', component: CageComponent, canActivate: [AuthGuard] },
 
   { path: 'shop', redirectTo: '/shop/cages', pathMatch: 'full' },
   { path: 'shop', component: ShopComponent, children: [
@@ -50,13 +51,14 @@ const routes: Routes = [
     { path: 'posts/:boardType', component: PostsComponent },
     { path: 'posts/:boardType/post/:postId', component: PostComponent },
   ] },
-  { path: 'community/createPost', component: CreatePostComponent },
-  { path: 'community/editPost/:postId', component: CreatePostComponent},
-  { path: 'user', component: UserComponent },
+  { path: 'community/createPost', component: CreatePostComponent, canActivate: [AuthGuard] },
+  { path: 'community/editPost/:postId', component: CreatePostComponent, canActivate: [AuthGuard]},
+  { path: 'user', component: UserComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AuthGuard]
 })
 export class AppRoutingModule { }

@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
@@ -37,6 +37,7 @@ import { SignupComponent } from './components/auth/signup/signup.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CageComponent } from './components/home/cage/cage.component';
 import { UserComponent } from './components/auth/user/user.component';
+import { AuthInterceptor } from './components/auth/auth-interceptor';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,7 @@ import { UserComponent } from './components/auth/user/user.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}],
   bootstrap: [AppComponent],
 })
 

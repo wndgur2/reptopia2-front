@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,10 +10,23 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   isPhone = false;
+  userIsAuthenticated = false;
+  private authListenerSubs: Subscription;
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private authService: AuthService) { }
 
   ngOnInit(): void {
     window.innerWidth < 800 ? this.isPhone = true : this.isPhone = false;
+
+    this.userIsAuthenticated = this.authService.getIsAuth();
+    this.authListenerSubs = this.authService
+      .getAuthStatusListener()
+      .subscribe(isAuthenticated => {
+        this.userIsAuthenticated = isAuthenticated;
+      });
+  }
+
+  ngOnDestroy() {
+    this.authListenerSubs.unsubscribe();
   }
 }

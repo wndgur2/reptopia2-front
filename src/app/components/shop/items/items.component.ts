@@ -14,7 +14,6 @@ export class ItemsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.colAmount);
   }
 
   tiles = [
