@@ -48,6 +48,7 @@ export class AuthService {
           console.log("LOGGED_IN");
         }
       });
+
   }
 
   autoAuthUser() {

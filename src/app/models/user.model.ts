@@ -1,17 +1,17 @@
 export interface User{
-  id: number;
-  identifier: string;
+  id: string;
+  email: string;
   password: string;
 
   level: number;
   achievements: string[];
   reppi: number;
-  creatureIds: number[];
-  itemIds: number[];
+  creatureIds: string[];
+  itemIds: string[];
 
-  postIds: number[];
-  commentIds: number[];
-  likedPostIds: number[];
-  likedCommentIds: number[];
-  viewedPostIds: number[];
+  postIds: string[];
+  commentIds: string[];
+  likedPostIds: string[];
+  likedCommentIds: string[];
+  viewedPostIds: string[];
 }

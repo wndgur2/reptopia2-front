@@ -1,5 +1,6 @@
 button{
   border-radius: 0px;
+  border:none;
 }
 
 #top{
@@ -26,22 +27,8 @@ button{
   align-content: center;
 }
 
-.topButton:hover{
-  background-color: #e0e0e5;
-  align-self: center;
-}
-
-.topButton{
-  font-size: 14px;
-  padding: 10px 15px;
-  margin: 0.5%;
-  background:none;
-  border: none;
-  cursor: pointer;
-}
-
-.item{
-  margin-left: 1%;
+#contentWrapper{
+  display: flex;
 }
 
 #content{
@@ -52,6 +39,36 @@ button{
   line-height: 26px;
   letter-spacing: 0.5px;
   font-size: 16px;
+}
+
+#likes{
+  margin-top: 1rem;
+  margin-right: 0px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+}
+
+#like{
+  text-align: center;
+  line-height: 3rem;
+}
+
+.likeBtn{
+  padding: 0px;
+  min-width: 2rem;
+  width: 100%;
+  height: 2rem;
+  background: none;
+}
+
+.likeBtn:hover{
+  background-color: #e0e0ea;
+}
+
+.item{
+  margin-left: 1%;
 }
 
 #commentForm{

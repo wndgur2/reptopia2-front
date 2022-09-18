@@ -19,8 +19,7 @@ $indigo-palette: (
 @include mat-core();
 
 $primary: mat-palette($indigo-palette, 200);
-$light: mat-palette($indigo-palette, 300);
-$accent: mat-palette($indigo-palette, 400);
+$accent: mat-palette($indigo-palette, 300);
 $warn: mat-palette($indigo-palette, 700);
 $theme: mat-light-theme($primary, $accent, $warn);
 

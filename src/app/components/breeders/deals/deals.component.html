@@ -1,13 +1,13 @@
-  <div class="tile" [class.mat-elevation-z3]="true" *ngFor="let c of creatures">
+  <div class="tile" [class.mat-elevation-z3]="true" *ngFor="let d of deals">
     <canvas></canvas>
     <div class="right">
       <div class="discription">
-        <span class="species">{{c.getSpecies()}}</span>
+        <span class="species">{{d.creatureId}}</span>
         <span class="specification">
 
           <div class="propWrapper">
             <span class="prop">
-              이름&nbsp;&nbsp;{{c.name}}
+              이름&nbsp;&nbsp;{{d.creatureId}}
             </span>
             <span class="prop">
               성별&nbsp;&nbsp;암
@@ -15,10 +15,10 @@
           </div>
         <div class="propWrapper">
           <span class="prop">
-            무게&nbsp;&nbsp;{{c.weight}}g
+            무게&nbsp;&nbsp;{{d.creatureId}}g
           </span>
           <span class="prop">
-            길이&nbsp;&nbsp;{{c.length}}cm
+            길이&nbsp;&nbsp;{{d.creatureId}}cm
           </span>
         </div>
         <div class="propWrapper">
@@ -26,14 +26,14 @@
             나이&nbsp;&nbsp;3개월
           </span>
           <span class="prop">
-            가격&nbsp;&nbsp;{{c.cost}} R
+            가격&nbsp;&nbsp;{{d.price}} R
           </span>
         </div>
         </span>
       </div>
 
       <div id="low">
-        <div class="comment">{{c.comment}}</div>
+        <div class="comment">{{d.comment}}</div>
         <button mat-flat-button class="adopt" [class.mat-elevation-z2]="true" color="primary"><span>  데려갈게요.</span></button>
       </div>
     </div>

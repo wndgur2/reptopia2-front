@@ -9,12 +9,12 @@ import { CommunityComponent } from './components/community/community.component';
 import { CageComponent } from './components/home/cage/cage.component';
 import { PostComponent } from './components/community/post/post.component';
 import { PostsComponent } from './components/community/posts/posts.component';
-import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
 import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
 import { CreatePostComponent } from './components/community/create-post/create-post.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
 import { UserComponent } from './components/auth/user/user.component';
 import { AuthGuard } from './components/auth/auth.guard';
+import { DealsComponent } from './components/breeders/deals/deals.component';
 
 
 const routes: Routes = [
@@ -24,9 +24,7 @@ const routes: Routes = [
 
   { path: '', redirectTo: '/home/all', pathMatch: 'full' },
 
-  { path: 'home', component: HomeComponent, children: [
-    {path: ':species', component: CreaturesComponent}
-  ]},
+  { path: 'home/:species', component: HomeComponent},
 
   { path: 'cage/:cageId', component: CageComponent, canActivate: [AuthGuard] },
 

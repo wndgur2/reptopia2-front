@@ -12,8 +12,4 @@ export class ShopComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onActive(){
-    console.log("CAGES ACTIVE!");
-  }
-
 }

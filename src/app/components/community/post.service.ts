@@ -54,12 +54,13 @@ export class PostsService {
         map(postData => {
           return postData.posts.map((post:any) => {
             return {
-              title: post.title,
               id: post._id,
-              authorId: post.authorId,
-              date: post.date,
-              likes: post.likes,
-              views: post.views
+              // title: post.title,
+              // authorId: post.authorId,
+              // date: post.date,
+              // likes: post.likes,
+              // views: post.views
+              ...post
             };
           });
         })
@@ -79,17 +80,27 @@ export class PostsService {
   }
 
 
-  addPost(authorId: string, title: string, content: string) {
+  addPost(title: string, content: string) {
     const now = new Date();
-    const post: Post = { id: "zxc", title: title, content: content, authorId: authorId, likes: 0, views:0, commentIds: [], date: trimDate(now)};
+    const post: Post = {
+      id: "",
+      title: title,
+      content: content,
+      authorId: "",
+      likes: 0,
+      views:0,
+      commentIds: [],
+      date: trimDate(now)
+    };
     this.http
-      .post<{ message: string; postId: string }>(
+      .post<{ message: string; postId: string; authorId: string }>(
         serverUrl + "/api/posts",
         post
       )
       .subscribe(responseData => {
         const id = responseData.postId;
         post.id = id;
+        post.authorId = responseData.authorId;
         this.posts.push(post);
         this.postsUpdateListener.next([...this.posts]);
         this.router.navigate(["/community"]);
@@ -117,6 +128,10 @@ export class PostsService {
         this.posts = updatedPosts;
         this.postsUpdateListener.next([...this.posts]);
       });
+    }
+
+    likePost(postId: string, liked: boolean){
+
     }
 }
 

@@ -1,6 +1,8 @@
 export interface Creature{
   id: number;
 
+  userId: string;
+
   //genetic
   species: string;
   birth: string;

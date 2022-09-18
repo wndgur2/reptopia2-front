@@ -46,4 +46,8 @@ export class PostComponent implements OnInit, OnDestroy {
     this.postsService.deletePost(id);
     this.router.navigate(['/community']);
   }
+
+  onLike(liked:boolean){
+    this.postsService.likePost(this.post.id, liked);
+  }
 }

@@ -28,7 +28,6 @@ import { ItemsComponent } from './components/shop/items/items.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { CommunityComponent } from './components/community/community.component';
 import { PostsComponent } from './components/community/posts/posts.component';
-import { CreaturesComponent } from './components/breeders/creatures/creatures.component';
 import { PostComponent } from './components/community/post/post.component';
 import { ItemDetailComponent } from './components/shop/item-detail/item-detail.component';
 import { TipComponent } from './components/tip/tip.component';
@@ -38,6 +37,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CageComponent } from './components/home/cage/cage.component';
 import { UserComponent } from './components/auth/user/user.component';
 import { AuthInterceptor } from './components/auth/auth-interceptor';
+import { DealsComponent } from './components/breeders/deals/deals.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +51,7 @@ import { AuthInterceptor } from './components/auth/auth-interceptor';
     SignupComponent,
     CommunityComponent,
     PostsComponent,
-    CreaturesComponent,
+    DealsComponent,
     PostComponent,
     ItemDetailComponent,
     TipComponent,

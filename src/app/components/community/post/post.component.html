@@ -2,19 +2,25 @@
   <div id="top">
     <h2>{{post.title}}</h2>
     <div id="buttons">
-      <button class="topButton" color="primary" [routerLink]="['/community/editPost', post.id]">수정</button>
-      <button class="topButton" color="primary" (click)="onDeletePost(post.id)">삭제</button>
+      <button style="margin-right: 0.1rem;" mat-flat-button color="primary" [routerLink]="['/community/editPost', post.id]">수정</button>
+      <button mat-flat-button color="primary" (click)="onDeletePost(post.id)">삭제</button>
     </div>
   </div>
   <mat-divider></mat-divider>
   <div class="meta">
     <span class="item"> 작성자: {{post.authorId}}</span>
     <span class="item"> 조회수: {{post.views}}</span>
-    <span class="item"> 추천: {{post.likes}}</span>
     <span class="item"> 작성일: {{post.date}}</span>
   </div>
-  <p id="content"> {{post.content}}</p>
-  <mat-divider></mat-divider>
+  <div id="contentWrapper">
+    <p id="content"> {{post.content}}</p>
+    <div id="likes">
+      <button class="likeBtn" color="accent" (click)="onLike(true)">Up</button>
+      <span id="like">{{post.likes}}</span>
+      <button class="likeBtn" color="accent" (click)="onLike(false)">Down</button>
+    </div>
+  </div>
+    <mat-divider></mat-divider>
   <div id="comments">
     <form id="commentForm">
       <mat-form-field id="commentInput" appearance="legacy" color="primary">
