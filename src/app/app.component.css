@@ -15,6 +15,7 @@
 .category {
   font-weight: lighter;
   text-decoration: none;
+  padding: 0px;
   padding-top: calc(1% + 10px);
   padding-bottom: calc(1% + 10px);
   text-align: center;

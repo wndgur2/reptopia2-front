@@ -19,6 +19,9 @@ export class SignupComponent implements OnInit {
     if (form.invalid){
       return;
     }
-    this.authService.createUser(form.value.email, form.value.password, form.value.checkPassword);
+    if (form.value.password != form.value.checkPassword){
+      return;
+    }
+    this.authService.createUser(form.value.email, form.value.password, form.value.checkPassword, form.value.name);
   }
 }

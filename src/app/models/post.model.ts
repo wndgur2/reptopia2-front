@@ -6,5 +6,18 @@ export interface Post{
   likes: number;
   views: number;
   commentIds: number[];
-  date: string;
+  createdAt: string;
+  authorName: string;
+}
+
+export const postA ={
+  id: "",
+  authorId: "",
+  authorName: "",
+  title: '',
+  content: '',
+  likes: 0,
+  views: 0,
+  commentIds: [],
+  createdAt: ''
 }

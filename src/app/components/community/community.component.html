@@ -3,13 +3,6 @@
   <div class="row justify-content-md-center categories" [class.mat-elevation-z1]="true">
     <a
       class="col-6 col-lg-3 category"
-      [routerLink]="['/community/posts', 'announcement']"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page">
-      공지
-    </a>
-    <a
-      class="col-6 col-lg-3 category"
       [routerLink]="['/community/posts', 'best']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page">
@@ -17,7 +10,14 @@
     </a>
     <a
       class="col-6 col-lg-3 category"
-      [routerLink]="['/community/posts', 'whatever']"
+      [routerLink]="['/community/posts', 'announcement']"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page">
+      공지
+    </a>
+    <a
+      class="col-6 col-lg-3 category"
+      [routerLink]="['/community/posts', 'recent']"
       routerLinkActive="active"
       ariaCurrentWhenActive="page">
       최근

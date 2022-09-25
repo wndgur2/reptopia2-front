@@ -21,35 +21,42 @@ export class PostsService {
   getPost(id:string){
     return this.http
       .get<{
-        _id:string,
-        title:string,
-        content:string,
-        authorId: string,
-        commentIds: number[],
-        likes: number,
-        views: number,
-        date: string
+        _id:string;
+        title:string;
+        content:string;
+        authorId: string;
+        commentIds: number[];
+        likes: number;
+        views: number;
+        createdAt: string;
+        authorName: string;
        }>(
         serverUrl + "/api/posts/"+id
       )
       .subscribe((transformedPost) => {
         this.post = {
           id: transformedPost._id,
-          title:transformedPost.title,
-          content:transformedPost.content,
-          authorId:transformedPost.authorId,
-          commentIds:transformedPost.commentIds,
-          likes:transformedPost.likes,
-          views:transformedPost.views,
-          date:transformedPost.date,
+          ...transformedPost
         }
         this.postUpdateListener.next(this.post);
       });
   }
 
-  getPosts() {
+  getPosts(type: string, authorId?:any) {
+    let url:string;
+    url = "/api/posts";
+    if(type === "my"){
+      if(authorId){
+          url = "/api/posts/postBy/"+authorId;
+        }
+      else{
+        this.router.navigate(["/login"]);
+      }
+    } else if(type === "announcement"){
+      url = "/api/posts/postBy/63270878fd3beea299e5cfc6";
+    }
     this.http
-      .get<{ message: string; posts: any }>(serverUrl + "/api/posts")
+      .get<{ message: string; posts: any }>(serverUrl + url)
       .pipe(
         map(postData => {
           return postData.posts.map((post:any) => {
@@ -81,16 +88,15 @@ export class PostsService {
 
 
   addPost(title: string, content: string) {
-    const now = new Date();
-    const post: Post = {
+    const post = {
       id: "",
       title: title,
       content: content,
       authorId: "",
+      authorName: "",
       likes: 0,
       views:0,
-      commentIds: [],
-      date: trimDate(now)
+      commentIds: []
     };
     this.http
       .post<{ message: string; postId: string; authorId: string }>(
@@ -98,11 +104,6 @@ export class PostsService {
         post
       )
       .subscribe(responseData => {
-        const id = responseData.postId;
-        post.id = id;
-        post.authorId = responseData.authorId;
-        this.posts.push(post);
-        this.postsUpdateListener.next([...this.posts]);
         this.router.navigate(["/community"]);
       });
   }
@@ -128,23 +129,12 @@ export class PostsService {
         this.posts = updatedPosts;
         this.postsUpdateListener.next([...this.posts]);
       });
+  }
+
+  likePost(post: Post, liked: boolean, userId: string){
+    console.log("Like post!");
+    this.http
+      .put(serverUrl + "/api/posts/like/" + post.id, post)
+      .subscribe();
     }
-
-    likePost(postId: string, liked: boolean){
-
-    }
-}
-
-const trimDate = (now : Date)=>{
-  // 9/8/2022, 10:32:51 PM
-  // 9/8, 10:32
-  let res = "";
-  res += now.getMonth().toString();
-  res += "/";
-  res += now.getDate().toString();
-  res += " ";
-  res += now.getHours().toString();
-  res += ":";
-  res += now.getMinutes().toString();
-  return res;
 }

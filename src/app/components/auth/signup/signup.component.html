@@ -35,6 +35,17 @@
           required
         />
       </mat-form-field>
+      <mat-form-field appearance="legacy" color="primary">
+        <mat-label>이름</mat-label>
+        <input
+          matInput
+          name="name"
+          type="name"
+          ngModel
+          required
+          placeholder="개똥이"
+        />
+      </mat-form-field>
       <button mat-flat-button color="primary">생성</button>
       <a routerLink="/login">계정이 있나요?</a>
     </form>

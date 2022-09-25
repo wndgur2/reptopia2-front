@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -10,14 +10,13 @@ import { PostsService } from '../post.service';
   templateUrl: './create-post.component.html',
   styleUrls: ['../../../app.component.css', './create-post.component.css']
 })
-export class CreatePostComponent implements OnInit {
+export class CreatePostComponent implements OnInit{
   enteredTitle = "";
   enteredContent = "";
   post: Post;
   isLoading = false;
   private mode = "create";
   private postId: string;
-  private postSub: Subscription;
 
   constructor(
     public postsService: PostsService,
@@ -32,7 +31,7 @@ export class CreatePostComponent implements OnInit {
         this.postId = paramMap.get("postId")!;
         this.isLoading = true;
         this.postsService.getPost(this.postId);
-        this.postSub = this.postsService.getPostUpdateListener()
+        this.postsService.getPostUpdateListener()
         .subscribe((postData:Post) => {
           this.isLoading = false;
           this.post = postData;

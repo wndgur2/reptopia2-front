@@ -3,11 +3,11 @@
     <span id="inform"><span id="id">wndgur2</span> 님의 정보예요.</span>
     <mat-list id="info">
       <div class="item">
-        <span class="prop">이름</span> <span class="data">이중혁</span>
+        <span class="prop">이름</span> <span class="data">{{userData.name}}</span>
       </div>
       <mat-divider></mat-divider>
       <div class="item">
-        <span class="prop">숙련</span> <span class="data">초급자</span>
+        <span class="prop">숙련</span> <span class="data">{{userData.level}}</span>
       </div>
       <mat-divider></mat-divider>
       <div class="item">
@@ -15,7 +15,11 @@
       </div>
       <mat-divider></mat-divider>
       <div class="item">
-        <span class="prop">업적</span> <span class="data">없음</span>
+        <span class="prop">업적</span> <span class="data">{{userData.achievements}}...</span>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="item">
+        <span class="prop">메일</span> <span class="data">{{userData.email}}</span>
       </div>
       <button (click)="onLogout()" mat-raised-button id="logout" color="primary">
         로그아웃

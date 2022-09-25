@@ -44,7 +44,7 @@ const routes: Routes = [
   { path: 'breeders', redirectTo: '/breeders/all', pathMatch: 'full' },
   { path: 'breeders/:species', component: BreedersComponent},
 
-  { path: 'community', redirectTo: '/community/posts/announcement', pathMatch: 'full' },
+  { path: 'community', redirectTo: '/community/posts/best', pathMatch: 'full' },
   { path: 'community', component: CommunityComponent, children: [
     { path: 'posts/:boardType', component: PostsComponent },
     { path: 'posts/:boardType/post/:postId', component: PostComponent },

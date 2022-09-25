@@ -9,9 +9,9 @@
     <a class="menu" routerLink="/breeders">분양</a>
     <div id="meOut">
       <div id="meIn" *ngIf="this.userIsAuthenticated">
-        <span class="meta d-none d-sm-block">10000 R</span>
-        <span class="meta d-none d-sm-block">숙련자</span>
-        <a id="id" class="menu" routerLink="/user">{{isPhone?"나":"wndgur2"}}</a>
+        <span class="meta d-none d-sm-block">{{userData.reppi}} R</span>
+        <span class="meta d-none d-sm-block">{{userData.level}}</span>
+        <a id="id" class="menu" routerLink="/user">{{isPhone?"나":userData.name}}</a>
       </div>
     </div>
   </div>

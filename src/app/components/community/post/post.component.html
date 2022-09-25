@@ -1,16 +1,16 @@
 <div id="container">
   <div id="top">
     <h2>{{post.title}}</h2>
-    <div id="buttons">
+    <div id="buttons" *ngIf="userId === post.authorId">
       <button style="margin-right: 0.1rem;" mat-flat-button color="primary" [routerLink]="['/community/editPost', post.id]">수정</button>
       <button mat-flat-button color="primary" (click)="onDeletePost(post.id)">삭제</button>
     </div>
   </div>
   <mat-divider></mat-divider>
   <div class="meta">
-    <span class="item"> 작성자: {{post.authorId}}</span>
+    <span class="item"> 작성자: {{post.authorName}}</span>
     <span class="item"> 조회수: {{post.views}}</span>
-    <span class="item"> 작성일: {{post.date}}</span>
+    <span class="item"> 작성일: {{dateToString(post.createdAt)}}</span>
   </div>
   <div id="contentWrapper">
     <p id="content"> {{post.content}}</p>

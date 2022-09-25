@@ -14,9 +14,9 @@
       </a>
     </div>
     <div class="right">
-      <a class="meta">이중혁</a>
-      <span class="meta">0</span>
-      <span class="meta" id="time">{{post.date}}</span>
+      <a class="meta">{{post.authorName}}</a>
+      <span class="meta">{{post.likes}}</span>
+      <span class="meta" id="time">{{dateToString(post.createdAt)}}</span>
     </div>
   </div>
 </div>
