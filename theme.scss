@@ -1,26 +1,39 @@
 @import "~@angular/material/theming";
 $indigo-palette: (
-  50: #252525,
-  100: #252525,
-  200: #252525,
-  300: #eeeef4,
+  50: #000001,
+  100: #080809,
+  200: #101011,
+  300: #181819,
   400: #252525,
-  500: #252525,
-  600: #252525,
-  700: #f37676,
+  500: #2d2d2e,
+  600: #373738,
+  700: #3f3f40,
+  800: #808081,
+  900: #a0a0a1,
   contrast: (
-    50: rgba(white, 0.87),
-    100: rgba(white, 0.87),
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
     200: rgba(white, 0.87),
-    300: rgba(#252525, 0.87),
+    300: rgba(white, 0.87),
     400: rgba(white, 0.87),
+    500: rgba(white, 0.87),
+    600: rgba(white, 0.87),
+    700: rgba(white, 0.87),
+    800: rgba(white, 0.87),
+    900: rgba(white, 0.87),
   ),
 );
 @include mat-core();
 
-$primary: mat-palette($indigo-palette, 200);
-$accent: mat-palette($indigo-palette, 300);
+$primary: mat-palette($indigo-palette, 400);
+$accent: mat-palette($indigo-palette, 500);
 $warn: mat-palette($indigo-palette, 700);
 $theme: mat-light-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);
+
+:root {
+  --color-primary: #{mat-color($primary)};
+  --color-accent: #{mat-color($accent)};
+  --color-warn: #{mat-color($warn)};
+}
