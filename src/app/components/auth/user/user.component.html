@@ -1,29 +1,38 @@
 <div class="container">
-  <mat-card id="userInfo" [class.mat-elevation-z1]="true">
-    <span id="inform"><span id="id">wndgur2</span> 님의 정보예요.</span>
-    <mat-list id="info">
-      <div class="item">
-        <span class="prop">이름</span> <span class="data">{{userData.name}}</span>
-      </div>
-      <mat-divider></mat-divider>
-      <div class="item">
-        <span class="prop">숙련</span> <span class="data">{{userData.level}}</span>
-      </div>
-      <mat-divider></mat-divider>
-      <div class="item">
-        <span class="prop">생물</span> <span class="data">10 마리</span>
-      </div>
-      <mat-divider></mat-divider>
-      <div class="item">
-        <span class="prop">업적</span> <span class="data">{{userData.achievements}}...</span>
-      </div>
-      <mat-divider></mat-divider>
-      <div class="item">
-        <span class="prop">메일</span> <span class="data">{{userData.email}}</span>
-      </div>
-      <button (click)="onLogout()" mat-raised-button id="logout" color="primary">
-        로그아웃
-      </button>
-    </mat-list>
-  </mat-card>
+    <mat-card id="userInfo" [class.mat-elevation-z1]="true">
+        <span id="inform"><span id="id">wndgur2</span> 님의 정보예요.</span>
+        <mat-list id="info">
+            <div class="item">
+                <span class="prop">이름</span>
+                <span class="data">{{ userData.name }}</span>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="item">
+                <span class="prop">숙련</span>
+                <span class="data">{{ userData.level }}</span>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="item">
+                <span class="prop">생물</span> <span class="data">10 마리</span>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="item">
+                <span class="prop">업적</span>
+                <span class="data">{{ userData.achievements }}...</span>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="item">
+                <span class="prop">메일</span>
+                <span class="data">{{ userData.email }}</span>
+            </div>
+            <button
+                (click)="onLogout()"
+                mat-raised-button
+                id="logout"
+                color="primary"
+            >
+                로그아웃
+            </button>
+        </mat-list>
+    </mat-card>
 </div>

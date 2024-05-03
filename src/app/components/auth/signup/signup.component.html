@@ -1,53 +1,57 @@
 <div class="container">
-  <mat-card>
-    <span id="inform">
-      이곳에 처음인가요?<br />도움이 필요하면 토론을 이용하세요.
-    </span>
-    <form (submit)="onSignUp(signUpForm)" #signUpForm="ngForm">
-      <mat-form-field appearance="legacy" color="primary">
-        <mat-label>이메일</mat-label>
-        <input
-          matInput
-          name="email"
-          type="email"
-          ngModel
-          required
-          placeholder="welcome@to.reptopia"
-        />
-      </mat-form-field>
-      <mat-form-field appearance="legacy" color="primary">
-        <mat-label>암호</mat-label>
-        <input
-          matInput
-          name="password"
-          type="password"
-          ngModel
-          required
-        />
-      </mat-form-field>
-      <mat-form-field appearance="legacy" color="primary">
-        <mat-label>암호 확인</mat-label>
-        <input
-          matInput
-          name="checkPassword"
-          type="password"
-          ngModel
-          required
-        />
-      </mat-form-field>
-      <mat-form-field appearance="legacy" color="primary">
-        <mat-label>이름</mat-label>
-        <input
-          matInput
-          name="name"
-          type="name"
-          ngModel
-          required
-          placeholder="개똥이"
-        />
-      </mat-form-field>
-      <button mat-flat-button color="primary">생성</button>
-      <a routerLink="/login">계정이 있나요?</a>
-    </form>
-  </mat-card>
+    <mat-card>
+        <span id="inform">
+            이곳에 처음인가요?<br />도움이 필요하면 토론을 이용하세요.
+        </span>
+        <form (submit)="onSignUp(signUpForm)" #signUpForm="ngForm">
+            <mat-form-field appearance="legacy" color="primary">
+                <mat-label>이메일</mat-label>
+                <input
+                    matInput
+                    name="email"
+                    type="email"
+                    ngModel
+                    required
+                    placeholder="welcome@to.reptopia"
+                />
+                <mat-error>{{ errorMessage.email }}</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="legacy" color="primary">
+                <mat-label>암호</mat-label>
+                <input
+                    matInput
+                    name="password"
+                    type="password"
+                    ngModel
+                    required
+                />
+                <mat-error>{{ errorMessage.password }}</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="legacy" color="primary">
+                <mat-label>암호 확인</mat-label>
+                <input
+                    matInput
+                    name="checkPassword"
+                    type="password"
+                    ngModel
+                    required
+                />
+                <mat-error>{{ errorMessage.passwordCheck }}</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="legacy" color="primary">
+                <mat-label>이름</mat-label>
+                <input
+                    matInput
+                    name="name"
+                    type="name"
+                    ngModel
+                    required
+                    placeholder="개똥이"
+                />
+                <mat-error>{{ errorMessage.name }}</mat-error>
+            </mat-form-field>
+            <button mat-flat-button color="primary">생성</button>
+            <a routerLink="/login">계정이 있나요?</a>
+        </form>
+    </mat-card>
 </div>
