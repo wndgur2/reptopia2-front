@@ -1,83 +1,83 @@
-.container{
-  height: 100%;
-  display: flex;
-  padding: 5% 20% 0% 20%;
-  align-items: center;
-  align-content: center;
+.container {
+    height: 100%;
+    display: flex;
+    padding: 5% 20% 0% 20%;
+    align-items: center;
+    align-content: center;
 }
 
-form{
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
 }
 
-mat-card{
-  align-self: center;
-  width: 100%;
-  height: 80%;
-  font-family: 'Nanum Myeongjo', serif;
-  padding: 15%;
-  border-radius: 0px;
+mat-card {
+    align-self: center;
+    width: 100%;
+    height: 80%;
+    font-family: "Nanum Myeongjo", serif;
+    padding: 15%;
+    border-radius: 0px;
 }
 
-#inform{
-  display: block;
-  font-size: 17px;
-  margin-bottom: calc(6% + 25px);;
-  line-height: 36px;
-  letter-spacing: 3px;
-  text-align: center;
+#inform {
+    display: block;
+    font-size: 17px;
+    margin-bottom: calc(6% + 25px);
+    line-height: 36px;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
-button{
-  padding:1.8%;
-  margin-top: calc(1% + 25px);
-  font-size: 15px;
-  letter-spacing:2px;
-  border-radius: 0px;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-
-  display: flex;
-  margin-top: calc(2% + 25px);
-
-  text-align: center;
-  justify-content: center;
-  font-size: 14px;
-
-  cursor: pointer;
-}
-
-a:hover{
-  text-decoration: underline;
-}
-
-@media (max-width: 1200px){
-  .container{
-    padding: 10% 10% 0% 10%;
-  }
-}
-
-@media (max-width: 768px){
-  .container{
-    padding: 20% 0% 5% 0%;
-  }
-
-  #inform{
-    margin-bottom: 10%;
+button {
+    padding: 1.8%;
+    margin-top: calc(1% + 25px);
     font-size: 15px;
-  }
+    letter-spacing: 2px;
+    border-radius: 0px;
+}
 
-  form{
+a {
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    margin-top: calc(2% + 25px);
+
+    text-align: center;
+    justify-content: center;
     font-size: 14px;
-    padding: 0% 5%;
-  }
 
-  a{
-    margin-top: 10%;
-  }
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 10% 10% 0% 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20% 0% 5% 0%;
+    }
+
+    #inform {
+        margin-bottom: 10%;
+        font-size: 15px;
+    }
+
+    form {
+        font-size: 14px;
+        padding: 0% 5%;
+    }
+
+    a {
+        margin-top: 10%;
+    }
 }

@@ -1,21 +1,21 @@
-.tileContainer{
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  height: calc(99.9% - 5px);
-  width: calc(99.9% - 5px);
-  align-self: flex-start;
+.tileContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: calc(99.9% - 5px);
+    width: calc(99.9% - 5px);
+    align-self: flex-start;
 }
 
-.cage{
-  cursor: pointer;
-  background-color: lightgray;
-  height: calc(100% - 34px);
-  width: 100%;
+.cage {
+    cursor: pointer;
+    background-color: lightgray;
+    height: calc(100% - 34px);
+    width: 100%;
 }
 
-.itemText{
-  text-align: center;
-  line-height: 34px;
-  color: black;
+.itemText {
+    text-align: center;
+    line-height: 34px;
+    color: black;
 }

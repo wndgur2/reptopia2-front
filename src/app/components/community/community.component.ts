@@ -1,16 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-community',
-  templateUrl: './community.component.html',
-  styleUrls: ['../../app.component.css', './community.component.css']
+    selector: "app-community",
+    templateUrl: "./community.component.html",
+    styleUrls: ["../../app.component.css", "./community.component.css"],
 })
 export class CommunityComponent implements OnInit {
+    constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-
+    ngOnInit(): void {}
 }

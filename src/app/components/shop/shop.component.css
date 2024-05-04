@@ -1,24 +1,24 @@
-.tileContainer{
-  width:100%;
-  height: 100%;
-  text-align: center;
+.tileContainer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
-.categories{
-  margin-bottom: calc(5% + 10px);
+.categories {
+    margin-bottom: calc(5% + 10px);
 }
 
-canvas{
-  cursor: pointer;
-  align-self: center;
-  background-color: lightgray;
-  height: calc( 100% - 80px);
-  width: 100%;
-  margin-bottom: 2%;
+canvas {
+    cursor: pointer;
+    align-self: center;
+    background-color: lightgray;
+    height: calc(100% - 80px);
+    width: 100%;
+    margin-bottom: 2%;
 }
 
-@media (max-width: 768px){
-  span{
-    font-size: 13px;
-  }
+@media (max-width: 768px) {
+    span {
+        font-size: 13px;
+    }
 }

@@ -1,32 +1,46 @@
 <app-tip></app-tip>
 <div class="container">
-  <form [class.mat-elevation-z1]="true" (submit)="onSavePost(postForm)" #postForm="ngForm" *ngIf="!isLoading">
-    <mat-form-field id="titleInput" appearance="legacy" color="primary">
-      <input matInput
-      id="titleInputText"
-      type="text"
-      name="title"
-      [ngModel] = "post? post.title:''"
-      required
-      placeholder="제목"
-      #title = "ngModel"
-      >
-    </mat-form-field>
-    <mat-form-field id="contentInput" appearance="legacy" color="primary">
-      <textarea matInput
-      [rows]="15"
-      [cdkTextareaAutosize]="true"
-      id="contentInputText"
-      type="text"
-      name="content"
-      [ngModel] = "post? post.content:''"
-      required
-      placeholder="내용"
-      #content = "ngModel"
-      ></textarea>
-    </mat-form-field>
-    <div id="submitWrapper">
-      <button class="submit" mat-flat-button type="submit" color="primary">등록</button>
-    </div>
-  </form>
+    <form
+        [class.mat-elevation-z1]="true"
+        (submit)="onSavePost(postForm)"
+        #postForm="ngForm"
+        *ngIf="!isLoading"
+    >
+        <mat-form-field id="titleInput" appearance="legacy" color="primary">
+            <input
+                matInput
+                id="titleInputText"
+                type="text"
+                name="title"
+                [ngModel]="post ? post.title : ''"
+                required
+                placeholder="제목"
+                #title="ngModel"
+            />
+        </mat-form-field>
+        <mat-form-field id="contentInput" appearance="legacy" color="primary">
+            <textarea
+                matInput
+                [rows]="15"
+                [cdkTextareaAutosize]="true"
+                id="contentInputText"
+                type="text"
+                name="content"
+                [ngModel]="post ? post.content : ''"
+                required
+                placeholder="내용"
+                #content="ngModel"
+            ></textarea>
+        </mat-form-field>
+        <div id="submitWrapper">
+            <button
+                class="submit"
+                mat-flat-button
+                type="submit"
+                color="primary"
+            >
+                등록
+            </button>
+        </div>
+    </form>
 </div>

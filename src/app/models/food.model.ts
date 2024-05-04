@@ -1,4 +1,4 @@
-export interface Food{
-  name: string;
-  weight: number;
+export interface Food {
+    name: string;
+    weight: number;
 }

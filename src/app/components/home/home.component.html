@@ -1,52 +1,55 @@
 <app-tip></app-tip>
 <div class="container">
-  <div class="row justify-content-md-center categories" [class.mat-elevation-z1]="true">
-    <a
-      class="col-6 col-lg-3 category"
-      [routerLink]="['/home', 'all']"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
+    <div
+        class="row justify-content-md-center categories"
+        [class.mat-elevation-z1]="true"
     >
-      모두
-    </a>
-    <a
-      class="col-6 col-lg-3 category"
-      [routerLink]="['/home', 'leopard']"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-    >
-    <span *ngIf="isPhone">레오</span>
-    <span *ngIf="!isPhone">레오파드 게코</span>
-    </a>
-    <a
-      class="col-6 col-lg-3 category"
-      [routerLink]="['/home', 'crested']"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-    >
-    <span *ngIf="isPhone">크레</span>
-    <span *ngIf="!isPhone">크레스티드 게코</span>
-    </a>
-    <a
-      class="col-6 col-lg-3 category"
-      [routerLink]="['/home', 'ball']"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-    >
-      <span *ngIf="isPhone">볼파</span>
-      <span *ngIf="!isPhone">볼 파이톤</span>
-    </a>
-  </div>
-  <mat-grid-list cols="2" [rowHeight]="rowHeight">
-    <mat-grid-tile
-      *ngFor="let tile of tiles"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-    >
-      <div class="tileContainer" [class.mat-elevation-z1]="true">
-        <canvas class="cage" [routerLink]="['/cage', tile.id]"></canvas>
-        <span class="itemText"> {{ tile.text }} </span>
-      </div>
-    </mat-grid-tile>
-  </mat-grid-list>
+        <a
+            class="col-6 col-lg-3 category"
+            [routerLink]="['/home', 'all']"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+        >
+            모두
+        </a>
+        <a
+            class="col-6 col-lg-3 category"
+            [routerLink]="['/home', 'leopard']"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+        >
+            <span *ngIf="isPhone">레오</span>
+            <span *ngIf="!isPhone">레오파드 게코</span>
+        </a>
+        <a
+            class="col-6 col-lg-3 category"
+            [routerLink]="['/home', 'crested']"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+        >
+            <span *ngIf="isPhone">크레</span>
+            <span *ngIf="!isPhone">크레스티드 게코</span>
+        </a>
+        <a
+            class="col-6 col-lg-3 category"
+            [routerLink]="['/home', 'ball']"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+        >
+            <span *ngIf="isPhone">볼파</span>
+            <span *ngIf="!isPhone">볼 파이톤</span>
+        </a>
+    </div>
+    <mat-grid-list cols="2" [rowHeight]="rowHeight">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows"
+        >
+            <div class="tileContainer" [class.mat-elevation-z1]="true">
+                <canvas class="cage" [routerLink]="['/cage', tile.id]"></canvas>
+                <span class="itemText"> {{ tile.text }} </span>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

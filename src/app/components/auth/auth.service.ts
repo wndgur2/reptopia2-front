@@ -110,12 +110,15 @@ export class AuthService {
     }
 
     requestUserData(userId: string) {
-        this.http
-            .get<User>(serverUrl + "/api/user/" + userId)
-            .subscribe((userData) => {
+        this.http.get<User>(serverUrl + "/api/user/" + userId).subscribe({
+            next: (userData) => {
                 this.userData = userData;
                 this.userDataListener.next(userData);
-            });
+            },
+            error: (err) => {
+                this.logout();
+            },
+        });
     }
 
     private setAuthTimer(duration: number) {

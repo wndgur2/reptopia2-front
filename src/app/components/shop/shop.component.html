@@ -1,38 +1,41 @@
 <app-tip></app-tip>
 <div class="container">
-  <div class="row justify-content-md-center categories" [class.mat-elevation-z1]="true">
-    <a
-      class="col-6 col-lg-3 category"
-      routerLink="/shop/cages"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
+    <div
+        class="row justify-content-md-center categories"
+        [class.mat-elevation-z1]="true"
     >
-      사육장
-    </a>
-    <a
-      class="col-6 col-lg-3 category"
-      routerLink="/shop/foods"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-    >
-      먹이
-    </a>
-    <a
-      class="col-6 col-lg-3 category"
-      routerLink="/shop/temperatures"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-    >
-      온습도
-    </a>
-    <a
-      class="col-6 col-lg-3 category"
-      routerLink="/shop/materials"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-    >
-      자재
-    </a>
-  </div>
-  <router-outlet></router-outlet>
+        <a
+            class="col-6 col-lg-3 category"
+            routerLink="/shop/cages"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+        >
+            사육장
+        </a>
+        <a
+            class="col-6 col-lg-3 category"
+            routerLink="/shop/foods"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+        >
+            먹이
+        </a>
+        <a
+            class="col-6 col-lg-3 category"
+            routerLink="/shop/temperatures"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+        >
+            온습도
+        </a>
+        <a
+            class="col-6 col-lg-3 category"
+            routerLink="/shop/materials"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+        >
+            자재
+        </a>
+    </div>
+    <router-outlet></router-outlet>
 </div>

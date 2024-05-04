@@ -1,61 +1,60 @@
 .board {
-  padding-top: 1%;
-  height: 80%;
-  overflow-y: hidden;
+    padding-top: 1%;
+    height: 80%;
+    overflow-y: hidden;
 }
 
 .post {
-  display: flex;
-  font-size: 16px;
-  line-height: 28px;
+    display: flex;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .columns {
-  display: flex;
-  color: #212121a0;
-  font-size: 15px;
+    display: flex;
+    color: #212121a0;
+    font-size: 15px;
 }
 
 .title {
-  display: inline-block;
-  width: 50%;
+    display: inline-block;
+    width: 50%;
 }
 
 .right {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .meta {
-  display: block;
-  width: 33%;
-  text-align: start;
-  font-size: 14px;
+    display: block;
+    width: 33%;
+    text-align: start;
+    font-size: 14px;
 }
 
 #time {
-  width: 50%;
+    width: 50%;
 }
 
-#writeWrapper{
-  display: flex;
-  justify-content: flex-end;
+#writeWrapper {
+    display: flex;
+    justify-content: flex-end;
 }
 
-#write{
-  align-self: flex-end;
-  border-radius: 0px;
-  letter-spacing: 1px;
-  margin-top: 5%;
-  padding: 0.2%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+#write {
+    align-self: flex-end;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    margin-top: 5%;
+    padding: 0.2%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @media (max-width: 768px) {
-  a{
-    font-size: 16px;
-  }
-
+    a {
+        font-size: 16px;
+    }
 }

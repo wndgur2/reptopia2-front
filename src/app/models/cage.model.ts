@@ -1,19 +1,19 @@
-export interface Cage{
-  id: number;
+export interface Cage {
+    id: number;
 
-  creatureIds: number[];
-  itemIds: number[];
+    creatureIds: number[];
+    itemIds: number[];
 
-  width: number;
-  depth: number;
-  height: number;
+    width: number;
+    depth: number;
+    height: number;
 
-  temperature: number;
-  humidity: number;
+    temperature: number;
+    humidity: number;
 
-  pollution: number;
-  naturalDecompositionPerDay: number;
-  ventilation: number;
+    pollution: number;
+    naturalDecompositionPerDay: number;
+    ventilation: number;
 
-  brightness: number;
+    brightness: number;
 }
