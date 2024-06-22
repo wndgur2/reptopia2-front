@@ -11,7 +11,7 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://dbUser:1234@cluster0.f5csc.mongodb.net/node-angular"
+    process.env.MONGO_URL,
   )
   .then(() => {
     console.log("Connected to database!");
